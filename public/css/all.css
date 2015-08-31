@@ -12,21 +12,18 @@
 
 @font-face {
   font-family: Sintony;
-  src: url(/fonts/Sintony-Regular.ttf); }
+  src: url(/fonts/Sintony-Regular.ttf);
+  font-weight: normal; }
 
 @font-face {
-  font-family: Sintony;
+  font-family: Sintony-Bold;
   src: url(/fonts/Sintony-Bold.ttf);
   font-weigth: bold; }
 
 @font-face {
   font-family: Apercu;
-  src: url(/fonts/Apercu-Regular.otf); }
-
-@font-face {
-  font-family: Apercu;
-  src: url(/fonts/Apercu-Bold.otf);
-  font-weigth: bold; }
+  src: url(/fonts/Apercu.otf);
+  font-weight: normal; }
 
 .full-width {
   width: 100%;
@@ -6679,7 +6676,9 @@ h2 {
   text-shadow: 0 2px #d96d5c, 0 0 15px rgba(0, 0, 0, 0.3); }
 
 h3, h4, h5 {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 /*
 
@@ -6755,7 +6754,7 @@ h3, h4, h5 {
       font-weight: bold;
       font-size: 0.875rem;
       border-bottom: 2px solid transparent;
-      box-shadow: 0px -4px 0px transparent inset;
+      box-shadow: 0px -3px 0px transparent inset;
       line-height: 2.2rem;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -6763,12 +6762,12 @@ h3, h4, h5 {
       .navigation-bar dl.sub-nav dd a:hover {
         color: white;
         border-bottom: 2px solid #27323f;
-        box-shadow: 0px -4px 0px #27323f inset; }
+        box-shadow: 0px -3px 0px #27323f inset; }
     .navigation-bar dl.sub-nav dd.active a {
       font-weight: bold;
       background: none;
       border-bottom: 2px solid #d96d5c;
-      box-shadow: 0px -4px 0px #d96d5c inset;
+      box-shadow: 0px -3px 0px #d96d5c inset;
       border-radius: 0; }
 
 .section {

@@ -16,21 +16,17 @@
 @font-face {
     font-family: Sintony;
     src: url(/fonts/Sintony-Regular.ttf);
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: Sintony;
+    font-family: Sintony-Bold;
     src: url(/fonts/Sintony-Bold.ttf);
     font-weigth: bold;
 }
 
 @font-face {
     font-family: Apercu;
-    src: url(/fonts/Apercu-Regular.otf);
-}
-
-@font-face {
-    font-family: Apercu;
-    src: url(/fonts/Apercu-Bold.otf);
-    font-weigth: bold;
+    src: url(/fonts/Apercu.otf);
+    font-weight: normal;
 }

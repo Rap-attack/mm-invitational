@@ -78,7 +78,7 @@
         font-weight: bold;
         font-size: rem-calc(14);
         border-bottom: 2px solid transparent;
-        box-shadow: 0px -4px 0px transparent inset;
+        box-shadow: 0px -3px 0px transparent inset;
         line-height: 2.2rem;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -87,7 +87,7 @@
         &:hover {
           color: white;
           border-bottom: 2px solid $dark-blue;
-          box-shadow: 0px -4px 0px $dark-blue inset;
+          box-shadow: 0px -3px 0px $dark-blue inset;
         }
       }
 
@@ -95,7 +95,7 @@
         font-weight: bold;
         background: none;
         border-bottom: 2px solid $red;
-        box-shadow: 0px -4px 0px $red inset;
+        box-shadow: 0px -3px 0px $red inset;
         border-radius: 0;
       }
     }
