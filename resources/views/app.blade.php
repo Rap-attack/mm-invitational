@@ -274,7 +274,7 @@
 						</ul>
 
 						<h3>Tal</h3>
-						<p>Våra härliga toastmasters Marcus Löwgren och Mervi Keskitalo når du på toastmasters.mminvitational@gmail.com (länk).</p>
+						<p>Våra härliga toastmasters Marcus Löwgren och Mervi Keskitalo når du <a href="mailto:toastmasters.mminvitational@gmail.com">här</a>!</p>
 
 						<h3>Barn</h3>
 						<p>Ta med era fina kids till Engelberg om ni vill, middagen och festen på lördagen är för de vuxna men Ski Lodge hjälper till med barnpassning. Flagga lodgen vid intresse.</p>
