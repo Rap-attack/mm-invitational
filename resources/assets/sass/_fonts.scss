@@ -1,6 +1,13 @@
 @font-face {
-    font-family: Liberator-Light;
+    font-family: Liberator;
     src: url(../fonts/Liberator-Light.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Liberator;
+    src: url(../fonts/Liberator-Heavy.otf);
+    font-weight: bold;
 }
 
 @font-face {
