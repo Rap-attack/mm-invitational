@@ -37,7 +37,7 @@
 .text-box, .text-box-black {
   padding: 1.25rem;
   color: white;
-  background-color: rgba(32, 55, 89, 0.8); }
+  background-color: rgba(39, 50, 63, 0.8); }
   .text-box p:last-child, .text-box-black p:last-child {
     margin-bottom: 0; }
 
@@ -6668,7 +6668,7 @@ th.hide-for-touch {
     display: none !important; } }
 
 body {
-  background-color: #203759; }
+  background-color: #27323f; }
 
 h1, h2 {
   text-transform: uppercase;
@@ -6759,8 +6759,8 @@ h3, h4, h5 {
       letter-spacing: 1px; }
       .navigation-bar dl.sub-nav dd a:hover {
         color: white;
-        border-bottom: 2px solid #203759;
-        box-shadow: 0px -4px 0px #203759 inset; }
+        border-bottom: 2px solid #27323f;
+        box-shadow: 0px -4px 0px #27323f inset; }
     .navigation-bar dl.sub-nav dd.active a {
       font-weight: bold;
       background: none;
