@@ -45,7 +45,7 @@
   background-color: rgba(0, 0, 0, 0.3); }
 
 .red-border {
-  border-bottom: 3px solid #d86d5f;
+  border-bottom: 3px solid #d96d5c;
   margin-bottom: 1rem; }
 
 @-webkit-keyframes logo {
@@ -5658,12 +5658,12 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #dbd4c9;
+  color: #dcd5ca;
   line-height: inherit;
   text-decoration: none; }
   a:hover,
   a:focus {
-    color: #d86d5f; }
+    color: #d96d5c; }
   a img {
     border: none; }
 
@@ -5686,7 +5686,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: white;
-  font-family: Uni-Sans;
+  font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -6672,10 +6672,11 @@ body {
 
 h1, h2 {
   text-transform: uppercase;
-  letter-spacing: 2px; }
+  letter-spacing: 1px;
+  font-family: Liberator-Light; }
 
 h2 {
-  text-shadow: 0 2px #d86d5f, 0 0 15px rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 2px #d96d5c, 0 0 15px rgba(0, 0, 0, 0.3); }
 
 h3, h4, h5 {
   letter-spacing: 1px; }
@@ -6752,11 +6753,13 @@ h3, h4, h5 {
       transition: all 0.4s ease-in-out;
       color: white;
       font-weight: bold;
-      font-size: 1rem;
+      font-size: 0.875rem;
       border-bottom: 2px solid transparent;
       box-shadow: 0px -4px 0px transparent inset;
       line-height: 2.2rem;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: Liberator-Light; }
       .navigation-bar dl.sub-nav dd a:hover {
         color: white;
         border-bottom: 2px solid #27323f;
@@ -6764,8 +6767,8 @@ h3, h4, h5 {
     .navigation-bar dl.sub-nav dd.active a {
       font-weight: bold;
       background: none;
-      border-bottom: 2px solid #d86d5f;
-      box-shadow: 0px -4px 0px #d86d5f inset;
+      border-bottom: 2px solid #d96d5c;
+      box-shadow: 0px -4px 0px #d96d5c inset;
       border-radius: 0; }
 
 .section {
@@ -6788,7 +6791,7 @@ h3, h4, h5 {
     margin-left: auto;
     margin-top: 50px; }
   .intro h1 {
-    color: #dbd4c9;
+    color: #dcd5ca;
     margin: 40px; }
   .intro ul.intro-nav {
     text-style-type: none;
@@ -6828,11 +6831,11 @@ h3, h4, h5 {
     color: white;
     font-weight: bold;
     background-color: #354462;
-    border-bottom: 2px solid #d86d5f;
+    border-bottom: 2px solid #d96d5c;
     font-size: 1.2rem; }
   .program .event .tid {
     display: inline-block;
-    color: #d86d5f;
+    color: #d96d5c;
     font-weight: bold;
     min-width: 25%; }
 

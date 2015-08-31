@@ -76,11 +76,13 @@
         transition: all 0.4s ease-in-out;
         color: white;
         font-weight: bold;
-        font-size: rem-calc(16);
+        font-size: rem-calc(14);
         border-bottom: 2px solid transparent;
         box-shadow: 0px -4px 0px transparent inset;
         line-height: 2.2rem;
         letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: Liberator-Light;
 
         &:hover {
           color: white;
