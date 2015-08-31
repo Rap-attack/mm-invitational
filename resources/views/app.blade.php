@@ -312,9 +312,9 @@
 			}
 		});
 
-		new WOW().init({
+		new WOW({
 		    mobile: false,
-		  });
+		  }).init();
 
 		$('.intro').parallax({ 
 			imageSrc: './img/intro-2.jpg',
