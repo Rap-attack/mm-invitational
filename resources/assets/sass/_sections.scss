@@ -73,11 +73,7 @@
 
 	.program-list {
 		list-style-type: none;
-		margin: $margin-medium 0;
-
-		@media #{$large-up} {
-			margin: $margin-small 0;
-		}
+		margin: $margin-small 0;
 	}
 
 	li {
