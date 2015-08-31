@@ -1,0 +1,10 @@
+{
+  "name": "mminvitational",
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "jquery": "~2.1.4",
+    "parallax.js": "~1.3.2",
+    "wow": "~1.1.2",
+    "ScrollMagic": "~2.0.5"
+  }
+}

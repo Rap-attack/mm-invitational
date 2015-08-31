@@ -1,0 +1,101 @@
+/*
+
+@media only screen and (min-width: 40.063em) { 
+
+  .logo-wrapper {
+    position: relative;
+    margin-top: 50px;
+  }
+
+  .logo-wrapper .logo {
+    width: 200px;
+    height:  200px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -100px;
+
+    animation-name: logo;
+    animation-duration: 0.9s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .top-bar-section {
+    letter-spacing: 0.2rem;
+  }
+
+  // Right part
+  .top-bar-section ul.right {
+    width: 50%;
+    padding-left: 100px;
+  }
+
+  .top-bar-section ul.right li {
+    float:  left;
+    background-color: transparent;
+
+    animation-name: slide-right;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  // Left part
+  .top-bar-section ul.left {
+    width:  50%;
+    padding-right: 100px;
+  }
+
+  .top-bar-section ul.left li {
+    float:  right;
+    background-color: transparent;
+
+    animation-name: slide-left;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+}
+*/
+
+.navigation-bar {
+  position: absolute;
+  top: 0;
+  background: linear-gradient(rgba(black, 0.2), transparent);
+  transition: all 0.5s ease-in-out;
+
+  @media #{$small-only} {
+    display: none;
+  }
+
+  dl.sub-nav {
+    float: right;
+
+    dd {
+
+      a {
+        transition: all 0.4s ease-in-out;
+        color: white;
+        font-weight: bold;
+        font-size: rem-calc(16);
+        border-bottom: 2px solid transparent;
+        box-shadow: 0px -4px 0px transparent inset;
+        line-height: 2.2rem;
+        letter-spacing: 1px;
+
+        &:hover {
+          color: white;
+          border-bottom: 2px solid $light-blue;
+          box-shadow: 0px -4px 0px $light-blue inset;
+        }
+      }
+
+      &.active a {
+        font-weight: bold;
+        background: none;
+        border-bottom: 2px solid $red;
+        box-shadow: 0px -4px 0px $red inset;
+        border-radius: 0;
+      }
+    }
+  }
+}

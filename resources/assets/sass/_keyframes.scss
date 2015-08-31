@@ -1,0 +1,35 @@
+@keyframes logo {
+
+	0% { 
+		opacity: 0; 
+		transform: translate3d(0, 40px, 0);
+	}
+
+	100% { 
+		opacity: 1;
+	}
+}
+
+@keyframes slide-left {
+
+	0% { 
+		opacity: 0; 
+		transform: translate3d(40px, 0, 0); 
+	}
+
+	100% { 
+		opacity: 1; 
+	}
+}
+
+@keyframes slide-right {
+
+	0% { 
+		opacity: 0;
+		transform: translate3d(-40px, 0, 0);
+	}
+
+	100% { 
+		opacity: 1; 
+	}
+}
