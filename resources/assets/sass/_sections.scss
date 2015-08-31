@@ -72,42 +72,55 @@
 	background: transparent;
 
 	.program-list {
-		background-color: white;
 		list-style-type: none;
-		border-bottom-left-radius: 5px;
-		border-bottom-right-radius: 5px;
-		border: 1px solid $light-grey;
-		margin: 0 0 $margin-medium 0;
+		margin: $margin-medium 0;
 
 		@media #{$large-up} {
-			margin: 0;
+			margin: $margin-small 0;
 		}
 	}
 
 	li {
-		padding: $margin-small;
+		padding-left: $margin-small;
+		height: 4rem;
+
+		&:last-of-type {
+			border-bottom-right-radius: 2px;
+			border-bottom-left-radius: 2px;
+		}
 	}
 
 	.datum {
 		color: white;
 		font-weight: bold;
-		background-color: $light-blue;
 		border-bottom: 2px solid $red;
 		font-size: 1.2rem;
+		text-transform: uppercase;
+		padding-bottom: $margin-small / 2;
+		line-height: 4rem;
 	}
 
 	.event {
 
+		background-color: $light-brown;
+
+		&:nth-child(odd) {
+			background-color: $dark-brown;
+		}
+
 		.tid {
 			display: inline-block;
 			color: $red;
-			font-weight: bold;
 			min-width: 25%;
+			font-family: Liberator;
+			font-size: 1.2rem;
 		}
 
 		.title {
-
+			line-height: 4rem;
+			font-weight: bold;
 		}
+
 	}
 }
 

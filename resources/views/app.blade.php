@@ -93,12 +93,12 @@
 						</li>
 
 						<li class="event">
-							<span class="tid">15</span>
+							<span class="tid">15 - 18</span>
 							<span class="title">Vigsel</span>
 						</li>
 
 						<li class="event">
-							<span class="tid">XX</span>
+							<span class="tid">20 - </span>
 							<span class="title">Middag &amp; Fest</span>
 						</li>
 					</ul>
@@ -191,11 +191,11 @@
 						<ul class="activities">
 							<li>Hika upp till Brunnihütte, beläget på Engelbergs solsida, och ät deras specialité Käseschnitte. Sen rullar du ner till byn igen.</li>
 
-							<li>Shoppa schweizisk choklad, kika på klockor och ät rösti i medeltidsstaden Luzern - 50 minuter bort med tåget</li>
+							<li>Shoppa schweizisk choklad, kika på klockor och ät rösti i medeltidsstaden Luzern - 50 minuter bort med tåget.</li>
 
-							<li>Ta en runda ut på den vackra golfbanan som brukar ha öppnat för säsongen - om inte kan du ju alltid slå några bollar på ranchen</li>
+							<li>Ta en runda ut på den vackra golfbanan som brukar ha öppnat för säsongen - om inte kan du ju alltid slå några bollar på ranchen.</li>
 
-							<li>Berika dig kulturellt genom en guidad tur i det 900 år gamla klostret - kanske stöter du på en av munkarna i katakomberna</li>
+							<li>Berika dig kulturellt genom en guidad tur i det 900 år gamla klostret - kanske stöter du på en av munkarna i katakomberna?</li>
 
 							<li>Ta en öl i solen på Ski Lodge terass och bara njut av alpluften, varför göra det komplicerat?</li>
 						</ul>
@@ -233,7 +233,7 @@
 					<div class="text-box">
 						<h4>Resa</h4>
 						<p>
-							<a href="https://www.swiss.com/se/en">Flyg Swiss</a> och <a href="https:://www.sas.se">SAS</a> flyger direkt till Zurich flygplats. För övriga resealternativ, kika <a href="http://www.kayak.se/flights/ARN-ZRH/2016-04-21-flexible-1day/2016-04-24-flexible-1day">här</a>.
+							<a href="https://www.swiss.com/se/en">Swiss</a> och <a href="https://www.sas.se">SAS</a> flyger direkt till Zurich flygplats. För övriga resealternativ, kika <a href="http://www.kayak.se/flights/ARN-ZRH/2016-04-21-flexible-1day/2016-04-24-flexible-1day">här</a>.
 						</p>
 
 					</div>
