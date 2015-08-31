@@ -45,6 +45,12 @@
   border-bottom: 3px solid #d96d5c;
   margin-bottom: 1rem; }
 
+.red {
+  color: #d96d5c; }
+
+.text-shadow {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
+
 @-webkit-keyframes logo {
   0% {
     opacity: 0;
@@ -6673,7 +6679,7 @@ h1, h2 {
   font-family: Liberator-Light; }
 
 h2 {
-  text-shadow: 0 2px #d96d5c, 0 0 15px rgba(0, 0, 0, 0.3); }
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3); }
 
 h3, h4, h5 {
   letter-spacing: 1px;

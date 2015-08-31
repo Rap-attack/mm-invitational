@@ -128,7 +128,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="mm-invitational">MM Invitational</h2>
 					<a name="mm-invitational"></a>
-					<h5>Fredagen den 22:a april går parallellslalomtävlingen MM Invitational av stapeln.</h5>
+					<h5 class="text-shadow">Fredagen den 22:a april går parallellslalomtävlingen <i>MM Invitational</i> av stapeln.</h5>
 				</div>
 			</div>
 
@@ -170,7 +170,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="engelberg">Engelberg</h2>
 					<a name="engelberg"></a>
-					<h5>Engelberg på våren erbjuder grönskande dalgångar och vita bergstoppar, en magisk kombo helt enkelt.</h5>
+					<h5 class="text-shadow">På våren erbjuder Engelberg både grönskande dalgångar och vita bergstoppar, en magisk kombo helt enkelt.</h5>
 				</div>
 			</div>
 
