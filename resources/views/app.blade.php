@@ -23,7 +23,7 @@
 		<div class="small-10 large-8 small-centered column">
 
 			<div class="logo wow fadeInUp">
-				<img src="img/logo.png">
+				<img src="img/mm-symbol.svg">
 			</div>
 
 			<h1 class="text-center wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1s">
@@ -312,10 +312,12 @@
 			}
 		});
 
-		new WOW().init();
+		new WOW().init({
+		    mobile: false,
+		  });
 
 		$('.intro').parallax({ 
-			imageSrc: './img/intro.jpg',
+			imageSrc: './img/intro-2.jpg',
 			position: 'center top',
 			naturalWidth: 1500,
 			naturalHeight: 1000,

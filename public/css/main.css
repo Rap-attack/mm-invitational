@@ -19,6 +19,15 @@
   src: url(/fonts/Sintony-Bold.ttf);
   font-weigth: bold; }
 
+@font-face {
+  font-family: Apercu;
+  src: url(/fonts/Apercu-Regular.otf); }
+
+@font-face {
+  font-family: Apercu;
+  src: url(/fonts/Apercu-Bold.otf);
+  font-weigth: bold; }
+
 .full-width {
   width: 100%;
   margin-left: auto;
@@ -502,7 +511,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1390,7 +1399,7 @@ select {
       background: #EFEFEF;
       color: #222222;
       display: block;
-      font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
@@ -1792,7 +1801,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -3818,7 +3827,7 @@ kbd {
 
 .label {
   display: inline-block;
-  font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -4206,7 +4215,7 @@ button:focus {
   .pricing-table .title {
     background-color: #333333;
     color: #EEEEEE;
-    font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -4214,7 +4223,7 @@ button:focus {
   .pricing-table .price {
     background-color: #F6F6F6;
     color: #333333;
-    font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 2rem;
     font-weight: normal;
     padding: 0.9375rem 1.25rem;
@@ -4468,7 +4477,7 @@ button:focus {
 
 .side-nav {
   display: block;
-  font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -4490,7 +4499,7 @@ button:focus {
         color: #1cc7ff; }
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
-      font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-weight: normal; }
     .side-nav li.divider {
       border-top: 1px solid;
@@ -4610,7 +4619,7 @@ button:focus {
   .sub-nav li {
     color: #999999;
     float: left;
-    font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: normal;
     margin-left: 1rem;
@@ -4799,7 +4808,7 @@ table {
       display: block;
       background-color: #EFEFEF;
       color: #222222;
-      font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       padding: 1rem 2rem; }
       .tabs dd > a:hover,
@@ -5115,7 +5124,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       color: #FFFFFF;
       display: block;
-      font-family: Sintony, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       padding-left: 4.16667rem;
@@ -5661,13 +5670,13 @@ a {
 /* Default paragraph styles */
 p {
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: normal;
   line-height: 1.8;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
-    font-size: 1.11875rem;
+    font-size: 1.21875rem;
     line-height: 1.6; }
   p aside {
     font-size: 0.875rem;
@@ -5751,7 +5760,7 @@ ul,
 ol,
 dl {
   font-family: inherit;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.8;
   list-style-position: outside;
   margin-bottom: 1.25rem; }
@@ -6750,8 +6759,8 @@ h3, h4, h5 {
       letter-spacing: 1px; }
       .navigation-bar dl.sub-nav dd a:hover {
         color: white;
-        border-bottom: 2px solid #354462;
-        box-shadow: 0px -4px 0px #354462 inset; }
+        border-bottom: 2px solid #203759;
+        box-shadow: 0px -4px 0px #203759 inset; }
     .navigation-bar dl.sub-nav dd.active a {
       font-weight: bold;
       background: none;
@@ -6776,9 +6785,10 @@ h3, h4, h5 {
     max-width: 300px;
     height: auto;
     margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-top: 50px; }
   .intro h1 {
-    color: white;
+    color: #dbd4c9;
     margin: 40px; }
   .intro ul.intro-nav {
     text-style-type: none;
