@@ -61,6 +61,7 @@
 	}
 
 	h4 {
+		font-family: Liberator-Light;
 		margin: 0;
 	}
 }
@@ -140,12 +141,10 @@
 	background: transparent;
 
 	ul.activities {
-		padding: 0;
 		margin: 0 0 0 8px;
 
 		li {
 			margin-bottom: $margin-small / 2;
-			list-style: none;
 			padding-left: 30px;
 
 			&:before {
@@ -183,4 +182,16 @@
 	//background-image: url('../img/ski-lodge.png');
 	//background-position: center bottom;
 	background: transparent;
+}
+
+.fyi {
+	background: transparent;
+
+	h4 {
+		margin-top: 1rem;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 }

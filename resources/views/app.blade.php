@@ -258,35 +258,35 @@
 
 			<div class="row">
 				<div class="large-12 column">
-					<h2 class="red-border" data-magellan-destination="fyi">FYI</h2>
+					<h2 class="red-border text-center" data-magellan-destination="fyi">FYI</h2>
 					<a name="fyi"></a>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="large-12 column">
-					<div class="text-box">
-						<h3>Klädsel</h3>
+					<div class="text-box text-center">
+						<h4>Klädsel</h4>
 						<ul>
 							<li>Fredag - Skidoutfit</li>
 							<li>Lördag - Mörk kostym</li>
 							<li>Söndag - Bekvämt</li>
 						</ul>
 
-						<h3>Tal</h3>
+						<h4>Tal</h4>
 						<p>Våra härliga toastmasters Marcus Löwgren och Mervi Keskitalo når du <a href="mailto:toastmasters.mminvitational@gmail.com">här</a>!</p>
 
-						<h3>Barn</h3>
+						<h4>Barn</h4>
 						<p>Ta med era fina kids till Engelberg om ni vill, middagen och festen på lördagen är för de vuxna men Ski Lodge hjälper till med barnpassning. Flagga lodgen vid intresse.</p>
 
-						<h3>Presenter</h3>
+						<h4>Presenter</h4>
 						<p>Den finaste presenten vi kan få är att ni vill ta er till Engelberg och fira med oss!</p>
 
-						<h3>OSA</h3>
+						<h4>OSA</h4>
 						<p>Senast den 28:e februari via formuläret nedan.</p>
 
-						<h3>Allergier</h3>
-						<p>Meddela era allergier direkt till Ski Lodge (länk info@skilodgeengelberg.com) i god tid.</p>
+						<h4>Allergier</h4>
+						<p>Meddela era allergier direkt till <a href="mailto:info@skilodgeengelberg.com">Ski Lodge</a> i god tid.</p>
 					</div>
 				</div>
 
