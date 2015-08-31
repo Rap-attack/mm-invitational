@@ -203,4 +203,17 @@
 			margin-top: 0;
 		}
 	}
+
+	.text-box {
+
+		@media #{$medium-only} {
+			padding-left: $margin-large;
+			padding-right: $margin-large;
+		}
+
+		@media #{$large-only} {
+			padding-left: $margin-large + $margin-medium;
+			padding-right: $margin-large + $margin-medium;
+		}
+	}
 }
