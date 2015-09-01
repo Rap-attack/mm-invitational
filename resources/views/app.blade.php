@@ -16,6 +16,7 @@
 			<dd data-magellan-arrival="engelberg"><a href="#engelberg">Engelberg</a></dd>
 			<dd data-magellan-arrival="boende"><a href="#boende">Boende &amp; Logi</a></dd>
 			<dd data-magellan-arrival="fyi"><a href="#fyi">FYI</a></dd>
+			<dd data-magellan-arrival="osa"><a href="#osa">OSA</a></dd>
 		</dl>
 	</div>
 
@@ -204,7 +205,6 @@
 					</div>
 				</div>
 			</div>
-		
 		</div>
 	</div>
 
@@ -258,14 +258,14 @@
 
 			<div class="row">
 				<div class="large-12 column">
-					<h2 class="red-border text-center" data-magellan-destination="fyi">FYI</h2>
+					<h2 class="red-border" data-magellan-destination="fyi">FYI</h2>
 					<a name="fyi"></a>
 				</div>
 			</div>
 
 			<div class="row">
-				<div class="large-12 column">
-					<div class="text-box text-center">
+				<div class="large-4 column">
+					<div class="text-box">
 						<h4>Klädsel</h4>
 						<ul>
 							<li>Fredag - Skidoutfit</li>
@@ -275,13 +275,19 @@
 
 						<h4>Tal</h4>
 						<p>Våra härliga toastmasters Marcus Löwgren och Mervi Keskitalo når du <a href="mailto:toastmasters.mminvitational@gmail.com">här</a>!</p>
-
+					</div>
+				</div>
+				<div class="large-4 column">
+					<div class="text-box">
 						<h4>Barn</h4>
 						<p>Ta med era fina kids till Engelberg om ni vill, middagen och festen på lördagen är för de vuxna men Ski Lodge hjälper till med barnpassning. Flagga lodgen vid intresse.</p>
 
 						<h4>Presenter</h4>
 						<p>Den finaste presenten vi kan få är att ni vill ta er till Engelberg och fira med oss!</p>
-
+					</div>
+				</div>
+				<div class="large-4 column">
+					<div class="text-box">
 						<h4>OSA</h4>
 						<p>Senast den 28:e februari via formuläret nedan.</p>
 
@@ -289,11 +295,52 @@
 						<p>Meddela era allergier direkt till <a href="mailto:info@skilodgeengelberg.com">Ski Lodge</a> i god tid.</p>
 					</div>
 				</div>
-
 			</div>
 		
 		</div>
 	</div>
+
+	<div class="row osa section wow fadeInUp">
+		<div class="large-10 large-offset-1 column end">
+			<div class="row">
+				<div class="large-12 column">
+					<h2 class="red-border" data-magellan-destination="osa">OSA</h2>
+					<a name="osa"></a>
+				</div>
+			</div>
+			<div class="panel osa-panel">
+				<form>
+					<div class="row">
+						<div class="large-4 columns">
+							<label>Namn
+								<input type="text" placeholder="Namn" />
+							</label>
+						</div>
+						<div class"large-8 columns">
+							<input id="participate" type="checkbox"><label for="participate">Vill du delta i MM Invitational?</label> 
+	      				</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<label>Meddelande
+								<textarea rows="4" cols="50" placeholder="Meddelande"></textarea>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+		<!--
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="logo">
+					<img src="img/mm-symbol.svg">
+				</div>
+			</div>
+		</div>
+		-->
 
 	<script src="js/all.js"></script>
 
@@ -317,7 +364,7 @@
 		  }).init();
 
 		$('.intro').parallax({ 
-			imageSrc: './img/intro-2.jpg',
+			imageSrc: './img/intro.jpg',
 			position: 'center top',
 			naturalWidth: 1500,
 			naturalHeight: 1000,

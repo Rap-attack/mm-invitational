@@ -40,7 +40,8 @@
 .text-box, .text-box-black {
   padding: 1.25rem;
   color: white;
-  background-color: rgba(39, 50, 63, 0.8); }
+  background-color: #27323f;
+  border-radius: 2px; }
   .text-box p:last-child, .text-box-black p:last-child {
     margin-bottom: 0; }
 
@@ -6697,6 +6698,17 @@ ul {
   margin: 0;
   padding: 0; }
 
+a {
+  color: #dcd5ca;
+  transition: all 0.2s ease-in;
+  box-shadow: 0 -3px 0 transparent inset;
+  border-bottom: 2px solid transparent; }
+
+a:hover {
+  color: #dcd5ca;
+  box-shadow: 0 -3px 0 #d96d5c inset;
+  border-bottom: 2px solid #d96d5c; }
+
 /*
 
 @media only screen and (min-width: 40.063em) { 
@@ -6910,13 +6922,27 @@ ul {
     margin-top: 1rem; }
     .fyi h4:first-child {
       margin-top: 0; }
-  @media only screen and (min-width: 40.0625em) and (max-width: 64em) {
-    .fyi .text-box {
-      padding-left: 5rem;
-      padding-right: 5rem; } }
-  @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
-    .fyi .text-box {
-      padding-left: 7.5rem;
-      padding-right: 7.5rem; } }
+
+.osa label {
+  color: #27323f; }
+
+.osa input, .osa textarea {
+  transition: all 0.2s ease-out;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #dcd5ca; }
+  .osa input:focus, .osa textarea:focus {
+    background: transparent;
+    border-bottom: 2px solid #dcd5ca;
+    box-shadow: 0 -2px 0 #dcd5ca inset; }
+
+.osa textarea {
+  resize: none; }
+
+.osa .panel.osa-panel {
+  background-color: white;
+  border: none;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=main.css.map */

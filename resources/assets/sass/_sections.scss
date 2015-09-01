@@ -14,7 +14,6 @@
 
 // Intro Section
 .intro {
-	// background-image: url('../img/intro2.jpg');
 	background: transparent;
 
 	.logo {
@@ -42,7 +41,6 @@
 
 // Inbjudan Section
 .inbjudan {
-	//background-image: url('../img/inbjudan.png');
 	background-position: center top;
 	background: transparent;
 	padding: 2 * $margin-large 0;
@@ -68,7 +66,6 @@
 
 // Program
 .program {
-	//background-color: $dark-blue;
 	background: transparent;
 
 	.program-list {
@@ -122,7 +119,6 @@
 
 // MM Invitational Section
 .mm-invitational {
-	//background-image: url('../img/mm-invitational.jpg');
 	background-position: center top;
 	background: transparent;
 
@@ -146,7 +142,6 @@
 
 // Engelberg
 .engelberg {
-	//background-image: url('../img/engelberg.jpg');
 	background: transparent;
 
 	ul.activities {
@@ -188,11 +183,10 @@
 
 // Boende
 .boende {
-	//background-image: url('../img/ski-lodge.png');
-	//background-position: center bottom;
 	background: transparent;
 }
 
+// FYI
 .fyi {
 	background: transparent;
 
@@ -203,17 +197,36 @@
 			margin-top: 0;
 		}
 	}
+}
 
-	.text-box {
+// OSA
+.osa {
 
-		@media #{$medium-only} {
-			padding-left: $margin-large;
-			padding-right: $margin-large;
+	label {
+		color: $dark-blue;
+	}
+
+	input, textarea {
+		transition: all 0.2s ease-out;
+		box-shadow: none;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid $light-brown;
+
+		&:focus {
+			background: transparent;
+			border-bottom: 2px solid $light-brown;
+			box-shadow: 0 -2px 0 $light-brown inset;
 		}
+	}
 
-		@media #{$large-only} {
-			padding-left: $margin-large + $margin-medium;
-			padding-right: $margin-large + $margin-medium;
-		}
+	textarea {
+		resize: none;
+	}
+
+	.panel.osa-panel {
+		background-color: white;
+		border: none;
+		border-radius: 2px;
 	}
 }

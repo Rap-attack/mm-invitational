@@ -23,3 +23,16 @@ ul {
 	margin: 0;
 	padding: 0;
 }
+
+a {
+	color: $light-brown;
+	transition: all 0.2s ease-in;
+	box-shadow: 0 -3px 0 transparent inset;
+	border-bottom: 2px solid transparent;
+}
+
+a:hover {
+	color: $light-brown;
+	box-shadow: 0 -3px 0 $red inset;
+	border-bottom: 2px solid $red;
+}

@@ -8,7 +8,8 @@
 .text-box, .text-box-black {
 	padding: $margin-small;
 	color: white;
-	background-color: rgba($dark-blue, 0.8);
+	background-color: $dark-blue;
+	border-radius: 2px;
 
 	p:last-child {
 		margin-bottom: 0;
