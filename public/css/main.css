@@ -492,7 +492,7 @@ body {
   font-size: 100%; }
 
 body {
-  background: #fff;
+  background: #27323f;
   color: #222;
   cursor: auto;
   font-family: Apercu, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -6652,7 +6652,8 @@ th.hide-for-touch {
     display: none !important; } }
 
 body {
-  background-color: #27323f; }
+  background-color: #27323f;
+  background: #27323f; }
 
 h1, h2 {
   text-transform: uppercase;
@@ -6853,7 +6854,7 @@ a:hover {
     margin: 0; }
 
 .program {
-  background: transparent; }
+  background: #27323f; }
   .program .program-list {
     list-style-type: none;
     margin: 1.25rem 0; }
@@ -6886,7 +6887,6 @@ a:hover {
       font-weight: bold; }
 
 .mm-invitational {
-  background-position: center top;
   background: transparent; }
   .mm-invitational table {
     border: none;
@@ -6935,90 +6935,91 @@ a:hover {
     .fyi h4:first-child {
       margin-top: 0; }
 
-.osa .top {
-  margin-bottom: 1.25rem; }
-
-.osa label {
-  color: #27323f; }
-
-.osa input, .osa textarea {
-  transition: all 0.2s ease-out;
-  box-shadow: none;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #dcd5ca;
-  font-size: 1rem; }
-  .osa input:focus, .osa textarea:focus {
+.osa {
+  background-color: #27323f; }
+  .osa .top {
+    margin-bottom: 1.25rem; }
+  .osa label {
+    color: #27323f; }
+  .osa input, .osa textarea {
+    transition: all 0.2s ease-out;
+    box-shadow: none;
     background: transparent;
+    border: none;
     border-bottom: 2px solid #dcd5ca;
-    box-shadow: 0 -2px 0 #dcd5ca inset; }
-
-.osa input[type="text"] {
-  height: 2rem;
-  margin: 0; }
-
-.osa textarea {
-  resize: none; }
-
-.osa button {
-  border-radius: 2px;
-  padding: 0.625rem 1.25rem;
-  background-color: #fefefe;
-  outline: none; }
-  .osa button:disabled {
-    background-color: #fdfdfd;
-    color: #fdfdfd; }
-  .osa button.add-attendee {
-    color: #27323f;
-    border: 2px solid #27323f; }
-  .osa button.remove-attendee {
-    color: #d96d5c;
-    border: 2px solid #d96d5c; }
-  .osa button.submit {
-    background-color: #27323f;
-    margin-bottom: 0; }
-
-.osa .attendee-row {
-  margin-bottom: 5px; }
-  .osa .attendee-row > .columns {
-    height: 4rem; }
-  .osa .attendee-row .name-holder {
-    padding-top: 1rem; }
-  @media only screen and (min-width: 64.0625em) {
-    .osa .attendee-row .competing-holder {
-      padding-top: 1rem; } }
-  .osa .attendee-row .ski-level-holder {
-    height: 0; }
-    .osa .attendee-row .ski-level-holder.show {
-      height: 6rem; }
-      @media only screen and (min-width: 64.0625em) {
-        .osa .attendee-row .ski-level-holder.show {
-          height: 4rem; } }
-    .osa .attendee-row .ski-level-holder .row .small-3.columns {
-      padding: 0; }
-
-.osa img.ski-level {
-  border-radius: 50%;
-  display: inline-block;
-  height: 4rem;
-  width: auto;
-  border: 2px solid transparent;
-  transition: all 0.6s ease-out;
-  cursor: pointer;
-  opacity: 0.7; }
-  @media only screen and (max-width: 40em) {
-    .osa img.ski-level {
-      height: 3rem; } }
-  .osa img.ski-level:hover {
-    opacity: 1; }
-  .osa img.ski-level.chosen {
-    border: 2px solid #d96d5c;
-    opacity: 1; }
-
-.osa .panel.osa-panel {
-  margin: 0;
-  background-color: white;
-  border: none;
-  border-radius: 2px; }
+    font-size: 1rem; }
+    .osa input:focus, .osa textarea:focus {
+      background: transparent;
+      border-bottom: 2px solid #dcd5ca;
+      box-shadow: 0 -2px 0 #dcd5ca inset; }
+    .osa input:disabled, .osa textarea:disabled {
+      background: transparent; }
+    .osa input.error, .osa textarea.error {
+      border-bottom: 2px solid #d96d5c; }
+  .osa input[type="text"] {
+    height: 2rem;
+    margin: 0; }
+  .osa textarea {
+    resize: none; }
+  .osa button {
+    border-radius: 2px;
+    padding: 0.625rem 1.25rem;
+    background-color: #fefefe;
+    outline: none; }
+    .osa button:disabled {
+      background-color: #fdfdfd;
+      color: #fdfdfd; }
+    .osa button.add-attendee {
+      color: #27323f;
+      border: 2px solid #27323f; }
+    .osa button.remove-attendee {
+      color: #d96d5c;
+      border: 2px solid #d96d5c; }
+    .osa button.submit {
+      background-color: #27323f;
+      margin-bottom: 0; }
+  .osa .submit-emoji {
+    height: 2rem;
+    width: auto; }
+  .osa .attendee-row {
+    margin-bottom: 5px; }
+    .osa .attendee-row > .columns {
+      height: 4rem; }
+    .osa .attendee-row .name-holder {
+      padding-top: 1rem; }
+    @media only screen and (min-width: 64.0625em) {
+      .osa .attendee-row .competing-holder {
+        padding-top: 1rem; } }
+    .osa .attendee-row .ski-level-holder {
+      height: 0; }
+      .osa .attendee-row .ski-level-holder.show {
+        height: 6rem; }
+        @media only screen and (min-width: 64.0625em) {
+          .osa .attendee-row .ski-level-holder.show {
+            height: 4rem; } }
+      .osa .attendee-row .ski-level-holder .row .small-3.columns {
+        padding: 0; }
+  .osa img.ski-level {
+    border-radius: 50%;
+    display: inline-block;
+    height: 4rem;
+    width: auto;
+    border: 2px solid transparent;
+    transition: all 0.6s ease-out;
+    cursor: pointer;
+    opacity: 0.7; }
+    @media only screen and (max-width: 40em) {
+      .osa img.ski-level {
+        height: 3rem; } }
+    .osa img.ski-level:hover {
+      opacity: 1; }
+    .osa img.ski-level.chosen {
+      border: 2px solid #d96d5c;
+      opacity: 1; }
+  .osa .panel.osa-panel {
+    margin: 0;
+    background-color: white;
+    border: none;
+    border-radius: 2px; }
 
 /*# sourceMappingURL=main.css.map */

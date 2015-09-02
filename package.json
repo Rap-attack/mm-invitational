@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.0.0",
     "laravel-elixir": "^3.0.0",
-    "vue": "^0.12.12"
+    "vue": "^0.12.12",
+    "vue-resource": "^0.1.15"
   }
 }

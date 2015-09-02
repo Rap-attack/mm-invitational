@@ -1,5 +1,7 @@
 import Vue from 'vue';
 
+Vue.use(require('vue-resource'));
+
 new Vue({
 	'el': '#osa',
 
@@ -13,7 +15,9 @@ new Vue({
 		],
 
 		'message': '',
-		
+
+		'error': false,
+
 		'submitted': false
 	},
 
@@ -22,6 +26,14 @@ new Vue({
 			return this.attendees.some(function(attendee) {
 				return attendee.competing;
 			});
+		},
+
+		'greeting': function() {
+			if (this.attendees.length > 1) {
+				return 'Tack, vad kul att ni kommer!';
+			}
+
+			return 'Tack ' + this.attendees[0].name.split(' ')[0] + ', vad kul att du kommer!';
 		}
 	},
 
@@ -47,11 +59,26 @@ new Vue({
 		'submit': function(e) {
 			e.preventDefault();
 
-			this.attendees.some(function(attendee) {
-				return attendee.competing;
-			});
+			var token = document.getElementById("_token").content;
+			console.log(token);
 
-			console.log(this.attendees);
+			if(this.attendees.some(function(attendee) { return !attendee.name; })) {
+				this.error = true;
+
+				return false;
+			}
+
+			this.$http.post('/api/osa/', {
+				'_token': token,
+				'attendees': this.attendees,
+				'message': this.message
+			})
+			.success(function(res) {
+				this.submitted = true;
+			})
+			.error(function(res) {
+				console.log(res);
+			});
 		}
 	}
 });

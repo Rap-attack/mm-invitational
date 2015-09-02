@@ -66,7 +66,7 @@
 
 // Program
 .program {
-	background: transparent;
+	background: $dark-blue;
 
 	.program-list {
 		list-style-type: none;
@@ -113,13 +113,11 @@
 			line-height: 4rem;
 			font-weight: bold;
 		}
-
 	}
 }
 
 // MM Invitational Section
 .mm-invitational {
-	background-position: center top;
 	background: transparent;
 
 	table {
@@ -202,6 +200,8 @@
 // OSA
 .osa {
 
+	background-color: $dark-blue;
+
 	.top {
 		margin-bottom: $margin-small;
 	}
@@ -222,6 +222,14 @@
 			background: transparent;
 			border-bottom: 2px solid $light-brown;
 			box-shadow: 0 -2px 0 $light-brown inset;
+		}
+
+		&:disabled {
+			background: transparent;
+		}
+
+		&.error {
+			border-bottom: 2px solid $red;
 		}
 	}
 
@@ -259,6 +267,11 @@
 			background-color: $dark-blue;
 			margin-bottom: 0;
 		}
+	}
+
+	.submit-emoji {
+		height: 2rem;
+		width: auto;
 	}
 
 	.attendee-row {

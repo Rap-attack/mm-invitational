@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="_token" id="_token" content="{!! csrf_token() !!}">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -320,12 +320,17 @@
 					</div>
 					<div class="row attendee-row" v-repeat="attendee in attendees" v-transition="attendee">
 						<div class="large-4 columns name-holder">
-							<input type="text" placeholder="Namn" text="attendee.name" v-model="attendee.name">
+							<input type="text" 
+								placeholder="Namn"
+								text="attendee.name" 
+								v-model="attendee.name"
+								v-attr="disabled: submitted"
+								v-class="error: error && !attendee.name">
 						</div>
 						<div class="large-3 columns competing-holder">
 							<label class="hide-for-large-up">Ställer upp i MM Invitational?</label>
 							<div class="switch round">
-								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing">
+								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing" v-attr="disabled: submitted">
 							    <label for="yes-no-@{{$index}}">
 								    <span class="switch-on">Ja</span>
 								    <span class="switch-off">Nej</span>
@@ -364,18 +369,35 @@
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<button class="add-attendee" v-on="click: addAttendee" v-attr="disabled: attendees.length >= 5">Lägg till gäst</button>
-							<button class="remove-attendee" v-transition="fade" v-on="click: removeAttendee" v-show="attendees.length > 1">Ta bort gäst</button>
+							<button class="add-attendee"
+								v-on="click: addAttendee"
+								v-attr="disabled: attendees.length >= 5 || submitted"
+							>Lägg till gäst</button>
+							<button class="remove-attendee" 
+								v-transition="fade" 
+								v-on="click: removeAttendee" 
+								v-show="attendees.length > 1"
+								v-attr="disabled: submitted"
+							>Ta bort gäst</button>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<textarea rows="4" cols="50" placeholder="Meddelande" v-model="message"></textarea>
+							<textarea rows="4" 
+								cols="50" 
+								placeholder="Meddelande" 
+								v-model="message"
+								v-attr="disabled: submitted"></textarea>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<button class="submit" v-on="click: submit">OSA!</button>
+							<button class="submit" 
+								v-attr="disabled: submitted"
+								v-on="click: submit"
+								v-transition="fade"
+							>@{{ submitted ? greeting : 'OSA' }}</button>
+							<img src="/img/emoji/ok.png" v-show="submitted" class="submit-emoji" v-transition="fade">
 						</div>
 					</div>
 				</form>
@@ -459,8 +481,6 @@
 			naturalHeight: 965,
 			position: 'center top'
 		});
-
-
 	</script>
 </body>
 </html>
