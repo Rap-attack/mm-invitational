@@ -9890,6 +9890,8 @@ new _vue2['default']({
 			'skiLevel': null
 		}],
 
+		'message': '',
+
 		'submitted': false
 	},
 
@@ -9900,8 +9902,6 @@ new _vue2['default']({
 			});
 		}
 	},
-
-	'transitions': {},
 
 	'methods': {
 		'addAttendee': function addAttendee(e) {
@@ -9920,6 +9920,16 @@ new _vue2['default']({
 			e.preventDefault();
 
 			this.attendees.pop();
+		},
+
+		'submit': function submit(e) {
+			e.preventDefault();
+
+			this.attendees.some(function (attendee) {
+				return attendee.competing;
+			});
+
+			console.log(this.attendees);
 		}
 	}
 });

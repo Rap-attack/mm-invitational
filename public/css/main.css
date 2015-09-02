@@ -6694,11 +6694,32 @@ a:hover {
   height: 0;
   opacity: 0; }
 
-.fade-transition {
+.fade-transition, .smygare-transition, .glidare-transition, .svangare-transition, .frasare-transition {
   transition: all 0.3s ease-in; }
 
-.fade-enter, .fade-leave {
+.fade-enter, .fade-leave, .smygare-enter, .smygare-leave, .glidare-enter, .glidare-leave, .svangare-enter, .svangare-leave, .frasare-enter, .frasare-leave {
   opacity: 0; }
+
+.smygare-transition, .frasare-leave {
+  transition-delay: 0s; }
+
+.glidare-transition {
+  transition-delay: .1s; }
+
+.svangare-transition {
+  transition-delay: .2s; }
+
+.frasare-transition {
+  transition-delay: .3s; }
+
+.svangare-transition.svangare-leave {
+  transition-delay: .3s; }
+
+.svangare-transition.glidare-leave {
+  transition-delay: .5s; }
+
+.svangare-transition.smygare-leave {
+  transition-delay: .7s; }
 
 /*
 
@@ -6978,27 +6999,24 @@ a:hover {
   border-radius: 50%;
   display: inline-block;
   height: 4rem;
-  width: auto; }
+  width: auto;
+  border: 2px solid transparent;
+  transition: all 0.6s ease-out;
+  cursor: pointer;
+  opacity: 0.7; }
   @media only screen and (max-width: 40em) {
     .osa img.ski-level {
-      height: 3.5rem; } }
+      height: 3rem; } }
+  .osa img.ski-level:hover {
+    opacity: 1; }
+  .osa img.ski-level.chosen {
+    border: 2px solid #d96d5c;
+    opacity: 1; }
 
 .osa .panel.osa-panel {
   margin: 0;
   background-color: white;
   border: none;
   border-radius: 2px; }
-
-.osa .smygare {
-  transition-delay: 0s; }
-
-.osa .glidare {
-  transition-delay: .1s; }
-
-.osa .svangare {
-  transition-delay: .2s; }
-
-.osa .frasare {
-  transition-delay: .3s; }
 
 /*# sourceMappingURL=main.css.map */

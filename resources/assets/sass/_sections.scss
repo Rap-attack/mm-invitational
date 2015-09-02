@@ -294,10 +294,24 @@
 		border-radius: 50%;
 		display: inline-block;
 		height: 4rem;
-		@media #{$small-only} {
-			height: 3.5rem;
-		}
 		width: auto;
+		border: 2px solid transparent;
+		transition: all 0.6s ease-out;
+		cursor: pointer;
+		opacity: 0.7;
+
+		@media #{$small-only} {
+			height: 3rem;
+		}
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.chosen {
+			border: 2px solid $red;
+			opacity: 1;
+		}
 	}
 
 	.panel.osa-panel {
@@ -305,21 +319,5 @@
 		background-color: white;
 		border: none;
 		border-radius: 2px;
-	}
-
-	.smygare {
-		transition-delay: 0s;
-	}
-
-	.glidare {
-		transition-delay: .1s;
-	}
-
-	.svangare {
-		transition-delay: .2s;
-	}
-
-	.frasare {
-		transition-delay: .3s;
 	}
 }

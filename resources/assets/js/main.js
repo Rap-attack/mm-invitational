@@ -12,6 +12,8 @@ new Vue({
 			}
 		],
 
+		'message': '',
+		
 		'submitted': false
 	},
 
@@ -21,10 +23,6 @@ new Vue({
 				return attendee.competing;
 			});
 		}
-	},
-
-	'transitions': {
-
 	},
 
 	'methods': {
@@ -44,6 +42,16 @@ new Vue({
 			e.preventDefault();
 
 			this.attendees.pop();
+		},
+
+		'submit': function(e) {
+			e.preventDefault();
+
+			this.attendees.some(function(attendee) {
+				return attendee.competing;
+			});
+
+			console.log(this.attendees);
 		}
 	}
 });

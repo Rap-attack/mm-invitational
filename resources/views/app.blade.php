@@ -311,19 +311,16 @@
 			<div class="panel osa-panel">
 				<form>
 					<div class="row top show-for-large-up">
-						<div class="large-4 columns">
-							<label>Kommande gäster</label>
-						</div>
-						<div class="large-3 columns">
+						<div class="large-3 large-offset-4 columns">
 							<label>Deltar i MM Invitational?</label> 
 	      				</div>
 	      				<div class="large-5 columns">
-	      					<label v-show="showRightColumn" v-transition="fade">Hur snabbt kan du åka?</label>
+	      					<label v-if="showRightColumn" v-transition="fade">Hur snabbt åker du?</label>
 	      				</div>
 					</div>
 					<div class="row attendee-row" v-repeat="attendee in attendees" v-transition="attendee">
 						<div class="large-4 columns name-holder">
-							<input type="text" placeholder="Namn" text="attendee.name" />
+							<input type="text" placeholder="Namn" text="attendee.name" v-model="attendee.name">
 						</div>
 						<div class="large-3 columns competing-holder">
 							<label class="hide-for-large-up">Ställer upp i MM Invitational?</label>
@@ -336,50 +333,33 @@
 							</div>
 	      				</div>
 	      				<div class="large-5 columns ski-level-holder" v-class="show: attendee.competing">
-      						<label class="hide-for-large-up" v-if="attendee.competing" v-transition="fade">Hur snabbt kan du åka?</label>
+      						<label class="hide-for-large-up" v-if="attendee.competing" v-transition="fade">Hur snabbt åker du?</label>
       						<div class="row" v-if="attendee.competing" v-transition="fade">
       							<div class="small-3 columns">
-      								<img class="ski-level smygare" src="/img/smygare.png">
+      								<img class="ski-level" 
+      									src="/img/smygare.png" 
+      									v-class="chosen: attendee.skiLevel == 1"
+      									v-on="click: attendee.skiLevel = 1">
       							</div>
       							<div class="small-3 columns">
-      								<img class="ski-level glidare" src="/img/glidare.png">
+      								<img class="ski-level" 
+      									src="/img/glidare.png" 
+      									v-class="chosen: attendee.skiLevel == 2"
+      									v-on="click: attendee.skiLevel = 2">
       							</div>
       							<div class="small-3 columns">
-      								<img class="ski-level svangare" src="/img/svangare.png">
+      								<img class="ski-level" 
+      									src="/img/svangare.png" 
+      									v-class="chosen: attendee.skiLevel == 3"
+      									v-on="click: attendee.skiLevel = 3">
       							</div>
       							<div class="small-3 columns">
-      								<img class="ski-level frasare" src="/img/frasare.png">
+      								<img class="ski-level" 
+      									src="/img/frasare.png" 
+      									v-class="chosen: attendee.skiLevel == 4"
+      									v-on="click: attendee.skiLevel = 4">
       							</div>
       						</div>
-
-      						<!--
-      						<ul class="ski-level-list" v-if="attendee.competing" v-transition="fade">
-      							<li>
-      								<label>
-										<input type="radio" name="smygare" value="small" />
-										<img src="/img/smygare.png">
-									</label>
-								</li>
-								<li>
-      								<label>
-										<input type="radio" name="glidare" value="small" />
-										<img src="/img/glidare.png">
-									</label>
-								</li>
-								<li>
-      								<label>
-										<input type="radio" name="svangare" value="small" />
-										<img src="/img/svangare.png">
-									</label>
-								</li>
-								<li>
-      								<label>
-										<input type="radio" name="frasare" value="small" />
-										<img src="/img/frasare.png">
-									</label>
-								</li>
-							</ul>
-							-->
 	      				</div>
 					</div>
 					<div class="row">
@@ -390,12 +370,12 @@
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<textarea rows="4" cols="50" placeholder="Meddelande"></textarea>
+							<textarea rows="4" cols="50" placeholder="Meddelande" v-model="message"></textarea>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<button class="submit">OSA!</button>
+							<button class="submit" v-on="click: submit">OSA!</button>
 						</div>
 					</div>
 				</form>
