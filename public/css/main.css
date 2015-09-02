@@ -6994,6 +6994,8 @@ a:hover {
       @media only screen and (min-width: 64.0625em) {
         .osa .attendee-row .ski-level-holder.show {
           height: 4rem; } }
+    .osa .attendee-row .ski-level-holder .row .small-3.columns {
+      padding: 0; }
 
 .osa img.ski-level {
   border-radius: 50%;
