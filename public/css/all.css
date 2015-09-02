@@ -6979,6 +6979,9 @@ a:hover {
   display: inline-block;
   height: 4rem;
   width: auto; }
+  @media only screen and (max-width: 40em) {
+    .osa img.ski-level {
+      height: 3.5rem; } }
 
 .osa .panel.osa-panel {
   margin: 0;
