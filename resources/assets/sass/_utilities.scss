@@ -32,3 +32,25 @@
 .text-shadow {
 	text-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
+
+.switch.round label {
+	background: $red;
+}
+
+.switch-on {
+  position: absolute;
+  left: -54px;
+  top: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.switch-off {
+  position: absolute;
+  left: -27px;
+  top: 8px;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+}

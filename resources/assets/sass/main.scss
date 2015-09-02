@@ -5,12 +5,12 @@
 @import './variables';
 @import './utilities';
 @import './settings';
-@import './keyframes';
 
 @import '../bower/foundation/scss/normalize';
 @import '../bower/foundation/scss/foundation';
 
 @import './global';
+@import './transitions';
 @import './components/navigation';
 
 @import './sections';

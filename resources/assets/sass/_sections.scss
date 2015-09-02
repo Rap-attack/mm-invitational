@@ -202,7 +202,12 @@
 // OSA
 .osa {
 
+	.top {
+		margin-bottom: $margin-small;
+	}
+
 	label {
+		font-size: 1rem;
 		color: $dark-blue;
 	}
 
@@ -212,6 +217,7 @@
 		background: transparent;
 		border: none;
 		border-bottom: 2px solid $light-brown;
+		font-size: 1rem;
 
 		&:focus {
 			background: transparent;
@@ -220,11 +226,43 @@
 		}
 	}
 
+	input[type="text"] {
+		height: $margin-medium;
+	}
+
 	textarea {
 		resize: none;
 	}
 
+	button {
+		border-radius: 2px;
+		padding: $margin-small/2 $margin-small;
+		background-color: darken(white, 0.2);
+		outline: none;
+
+		&:disabled {
+			background-color: darken(white, 0.8);
+			color: darken(white, 0.9);
+		}
+
+		&.add-attendee {
+			color: $dark-blue;
+			border: 2px solid $dark-blue;
+		}
+
+		&.remove-attendee {
+			color: $red;
+			border: 2px solid $red;
+		}
+
+		&.submit {
+			background-color: $dark-blue;
+			margin-bottom: 0;
+		}
+	}
+
 	.panel.osa-panel {
+		margin: 0;
 		background-color: white;
 		border: none;
 		border-radius: 2px;

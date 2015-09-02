@@ -1,0 +1,21 @@
+.attendee-transition {
+  transition: all .3s ease;
+  overflow: hidden;
+
+	@media #{$large-up} {
+		height: $margin-medium + rem-calc(10);
+	}
+}
+
+.attendee-enter, .attendee-leave {
+  height: 0;
+  opacity: 0;
+}
+
+.fade-transition {
+	transition: all .3s ease-in;
+}
+
+.fade-enter, .fade-leave {
+	opacity: 0;
+}

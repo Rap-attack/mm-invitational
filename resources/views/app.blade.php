@@ -300,7 +300,7 @@
 		</div>
 	</div>
 
-	<div class="row osa section wow fadeInUp">
+	<div id="osa" class="row osa section wow fadeInUp">
 		<div class="large-10 large-offset-1 column end">
 			<div class="row">
 				<div class="large-12 column">
@@ -310,21 +310,49 @@
 			</div>
 			<div class="panel osa-panel">
 				<form>
-					<div class="row">
+					<div class="row top show-for-large-up">
 						<div class="large-4 columns">
-							<label>Namn
-								<input type="text" placeholder="Namn" />
-							</label>
+							<label>Kommande gäster</label>
 						</div>
-						<div class"large-8 columns">
-							<input id="participate" type="checkbox"><label for="participate">Vill du delta i MM Invitational?</label> 
+						<div class="large-4 columns">
+							<label>Ställer upp i MM Invitational?</label> 
+	      				</div>
+	      				<div class="large-4 columns">
+	      					<label v-show="showRightColumn" v-transition="fade">Hur snabbt kan du åka?</label>
+	      				</div>
+					</div>
+					<div class="row" v-repeat="attendee in attendees" v-transition="attendee">
+						<div class="large-4 columns">
+							<input type="text" placeholder="Namn" text="attendee.name" />
+						</div>
+						<div class="large-4 columns">
+							<label class="hide-for-large-up">Ställer upp i MM Invitational?</label>
+							<div class="switch round">
+								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing">
+							    <label for="yes-no-@{{$index}}">
+								    <span class="switch-on">Ja</span>
+								    <span class="switch-off">Nej</span>
+								</label>
+							</div>
+	      				</div>
+	      				<div class="large-4 columns">
+      						<label class="hide-for-large-up" v-if="showRightColumn" v-transition="fade">Hur snabbt kan du åka?</label>
 	      				</div>
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
-							<label>Meddelande
-								<textarea rows="4" cols="50" placeholder="Meddelande"></textarea>
-							</label>
+							<button class="add-attendee" v-on="click: addAttendee" v-attr="disabled: attendees.length >= 5">Lägg till gäst</button>
+							<button class="remove-attendee" v-transition="fade" v-on="click: removeAttendee" v-show="attendees.length > 1">Ta bort gäst</button>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<textarea rows="4" cols="50" placeholder="Meddelande"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
+							<button class="submit">OSA!</button>
 						</div>
 					</div>
 				</form>
@@ -342,7 +370,8 @@
 		</div>
 		-->
 
-	<script src="js/all.js"></script>
+	<script src="/js/all.js"></script>
+	<script src="/js/main.js"></script>
 
 	<script>
 

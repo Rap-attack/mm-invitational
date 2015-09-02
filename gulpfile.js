@@ -12,8 +12,6 @@ elixir(function(mix) {
     		'../bower/foundation/js/foundation/foundation.magellan.js',
     		'../bower/parallax.js/parallax.min.js',
     		'../bower/wow/dist/wow.min.js'
-    	]);
-
-
-    	//.browserify('main.js')
+    	])
+        .browserify('main.js');
 });
