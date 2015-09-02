@@ -207,7 +207,6 @@
 	}
 
 	label {
-		font-size: 1rem;
 		color: $dark-blue;
 	}
 
@@ -227,7 +226,8 @@
 	}
 
 	input[type="text"] {
-		height: $margin-medium;
+		height: 2rem;
+		margin: 0;
 	}
 
 	textarea {
@@ -261,10 +261,62 @@
 		}
 	}
 
+	.attendee-row {
+		margin-bottom: 5px;
+
+		> .columns {
+			height: 4rem;
+		}
+
+		.name-holder {
+			padding-top: 1rem;
+		}
+
+		.competing-holder {
+			@media #{$large-up} {
+				padding-top: 1rem;
+			}
+		}
+
+		.ski-level-holder {
+			height: 0;
+
+			&.show {
+	  			height: 6rem;
+	  			@media #{$large-up} {
+					height: 4rem;
+	  			}
+	  		}
+		}
+	}
+
+	img.ski-level {
+		border-radius: 50%;
+		display: inline-block;
+		height: 4rem;
+		width: auto;
+	}
+
 	.panel.osa-panel {
 		margin: 0;
 		background-color: white;
 		border: none;
 		border-radius: 2px;
+	}
+
+	.smygare {
+		transition-delay: 0s;
+	}
+
+	.glidare {
+		transition-delay: .1s;
+	}
+
+	.svangare {
+		transition-delay: .2s;
+	}
+
+	.frasare {
+		transition-delay: .3s;
 	}
 }

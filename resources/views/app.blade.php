@@ -314,18 +314,18 @@
 						<div class="large-4 columns">
 							<label>Kommande gäster</label>
 						</div>
-						<div class="large-4 columns">
-							<label>Ställer upp i MM Invitational?</label> 
+						<div class="large-3 columns">
+							<label>Deltar i MM Invitational?</label> 
 	      				</div>
-	      				<div class="large-4 columns">
+	      				<div class="large-5 columns">
 	      					<label v-show="showRightColumn" v-transition="fade">Hur snabbt kan du åka?</label>
 	      				</div>
 					</div>
-					<div class="row" v-repeat="attendee in attendees" v-transition="attendee">
-						<div class="large-4 columns">
+					<div class="row attendee-row" v-repeat="attendee in attendees" v-transition="attendee">
+						<div class="large-4 columns name-holder">
 							<input type="text" placeholder="Namn" text="attendee.name" />
 						</div>
-						<div class="large-4 columns">
+						<div class="large-3 columns competing-holder">
 							<label class="hide-for-large-up">Ställer upp i MM Invitational?</label>
 							<div class="switch round">
 								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing">
@@ -335,8 +335,51 @@
 								</label>
 							</div>
 	      				</div>
-	      				<div class="large-4 columns">
-      						<label class="hide-for-large-up" v-if="showRightColumn" v-transition="fade">Hur snabbt kan du åka?</label>
+	      				<div class="large-5 columns ski-level-holder" v-class="show: attendee.competing">
+      						<label class="hide-for-large-up" v-if="attendee.competing" v-transition="fade">Hur snabbt kan du åka?</label>
+      						<div class="row" v-if="attendee.competing" v-transition="fade">
+      							<div class="small-3 columns">
+      								<img class="ski-level smygare" src="/img/smygare.png">
+      							</div>
+      							<div class="small-3 columns">
+      								<img class="ski-level glidare" src="/img/glidare.png">
+      							</div>
+      							<div class="small-3 columns">
+      								<img class="ski-level svangare" src="/img/svangare.png">
+      							</div>
+      							<div class="small-3 columns">
+      								<img class="ski-level frasare" src="/img/frasare.png">
+      							</div>
+      						</div>
+
+      						<!--
+      						<ul class="ski-level-list" v-if="attendee.competing" v-transition="fade">
+      							<li>
+      								<label>
+										<input type="radio" name="smygare" value="small" />
+										<img src="/img/smygare.png">
+									</label>
+								</li>
+								<li>
+      								<label>
+										<input type="radio" name="glidare" value="small" />
+										<img src="/img/glidare.png">
+									</label>
+								</li>
+								<li>
+      								<label>
+										<input type="radio" name="svangare" value="small" />
+										<img src="/img/svangare.png">
+									</label>
+								</li>
+								<li>
+      								<label>
+										<input type="radio" name="frasare" value="small" />
+										<img src="/img/frasare.png">
+									</label>
+								</li>
+							</ul>
+							-->
 	      				</div>
 					</div>
 					<div class="row">

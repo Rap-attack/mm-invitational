@@ -58,6 +58,9 @@
 .text-shadow {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
 
+.switch {
+  margin-bottom: 0 !important; }
+
 .switch.round label {
   background: #d96d5c; }
 
@@ -6685,7 +6688,7 @@ a:hover {
   overflow: hidden; }
   @media only screen and (min-width: 64.0625em) {
     .attendee-transition {
-      height: 3.125rem; } }
+      height: 4rem; } }
 
 .attendee-enter, .attendee-leave {
   height: 0;
@@ -6915,7 +6918,6 @@ a:hover {
   margin-bottom: 1.25rem; }
 
 .osa label {
-  font-size: 1rem;
   color: #27323f; }
 
 .osa input, .osa textarea {
@@ -6931,7 +6933,8 @@ a:hover {
     box-shadow: 0 -2px 0 #dcd5ca inset; }
 
 .osa input[type="text"] {
-  height: 2.5rem; }
+  height: 2rem;
+  margin: 0; }
 
 .osa textarea {
   resize: none; }
@@ -6954,10 +6957,45 @@ a:hover {
     background-color: #27323f;
     margin-bottom: 0; }
 
+.osa .attendee-row {
+  margin-bottom: 5px; }
+  .osa .attendee-row > .columns {
+    height: 4rem; }
+  .osa .attendee-row .name-holder {
+    padding-top: 1rem; }
+  @media only screen and (min-width: 64.0625em) {
+    .osa .attendee-row .competing-holder {
+      padding-top: 1rem; } }
+  .osa .attendee-row .ski-level-holder {
+    height: 0; }
+    .osa .attendee-row .ski-level-holder.show {
+      height: 6rem; }
+      @media only screen and (min-width: 64.0625em) {
+        .osa .attendee-row .ski-level-holder.show {
+          height: 4rem; } }
+
+.osa img.ski-level {
+  border-radius: 50%;
+  display: inline-block;
+  height: 4rem;
+  width: auto; }
+
 .osa .panel.osa-panel {
   margin: 0;
   background-color: white;
   border: none;
   border-radius: 2px; }
+
+.osa .smygare {
+  transition-delay: 0s; }
+
+.osa .glidare {
+  transition-delay: .1s; }
+
+.osa .svangare {
+  transition-delay: .2s; }
+
+.osa .frasare {
+  transition-delay: .3s; }
 
 /*# sourceMappingURL=main.css.map */
