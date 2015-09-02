@@ -402,18 +402,13 @@
 					</div>
 				</form>
 			</div>
-		</div>
-	</div>
-
-		<!--
-		<div class="row">
-			<div class="large-12 columns">
-				<div class="logo">
-					<img src="img/mm-symbol.svg">
+			<div class="row">
+				<div class="large-12 columns text-center">
+					<img src="img/mm-symbol.svg" class="end-logo wow fadeInUp">
 				</div>
 			</div>
 		</div>
-		-->
+	</div>
 
 	<script src="/js/all.js"></script>
 	<script src="/js/main.js"></script>
