@@ -5,6 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="_token" id="_token" content="{!! csrf_token() !!}">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
 </head>
 <body>
@@ -224,7 +229,7 @@
 					<div class="text-box">
 						<h4>Boende</h4>
 						<p>
-							Boendet Ski Lodge Engelberg har tagit fram specialpaketet MMI för CHF 240 per person inklusive tre nätters boende och frukost*. Bokar gör du <a href="mailto:info@skilodgeengelberg.com">här</a> senast den 28:e februari.
+							Ski Lodge Engelberg har tagit fram specialpaketet <i>MMI</i> för CHF 240 per person inklusive tre nätters boende och frukost*. Bokar gör du <a href="mailto:info@skilodgeengelberg.com">här</a> senast den 28:e februari.
 						</p>
 						<small>* Kortare och längre vistelse går självklart också att lösa till bra pris.</small>
 					</div>
