@@ -315,7 +315,7 @@
 							<label>Namn</label>
 						</div>
 						<div class="large-3 columns">
-							<label>Ställer upp i MM Invitational?</label> 
+							<label>Deltar i MM Invitational?</label> 
 	      				</div>
 	      				<div class="large-5 columns">
 	      					<label v-if="showRightColumn" v-transition="fade">Hur snabbt åker du?</label>
@@ -331,7 +331,7 @@
 								v-class="error: error && !attendee.name">
 						</div>
 						<div class="large-3 columns competing-holder">
-							<label class="hide-for-large-up">Ställer upp i MM Invitational?</label>
+							<label class="hide-for-large-up">Deltar i MM Invitational?</label>
 							<div class="switch round">
 								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing" v-attr="disabled: submitted">
 							    <label for="yes-no-@{{$index}}">
