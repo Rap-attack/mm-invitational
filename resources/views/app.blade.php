@@ -311,8 +311,11 @@
 			<div class="panel osa-panel">
 				<form>
 					<div class="row top show-for-large-up">
-						<div class="large-3 large-offset-4 columns">
-							<label>Deltar i MM Invitational?</label> 
+						<div class="large-4 columns">
+							<label>Namn</label>
+						</div>
+						<div class="large-3 columns">
+							<label>Ställer upp i MM Invitational?</label> 
 	      				</div>
 	      				<div class="large-5 columns">
 	      					<label v-if="showRightColumn" v-transition="fade">Hur snabbt åker du?</label>
@@ -332,8 +335,8 @@
 							<div class="switch round">
 								<input id="yes-no-@{{$index}}" type="checkbox" v-model="attendee.competing" v-attr="disabled: submitted">
 							    <label for="yes-no-@{{$index}}">
-								    <span class="switch-on">Ja</span>
-								    <span class="switch-off">Nej</span>
+								    <span class="switch-on">JA</span>
+								    <span class="switch-off">NEJ</span>
 								</label>
 							</div>
 	      				</div>
@@ -383,21 +386,23 @@
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
+							<label>Hälsning
 							<textarea rows="4" 
 								cols="50" 
-								placeholder="Meddelande" 
+								placeholder="Hälsning (valfri)" 
 								v-model="message"
 								v-attr="disabled: submitted"></textarea>
 						</div>
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
+							<img src="/img/emoji/ok.png" v-show="submitted" class="submit-emoji" v-transition="fade">
 							<button class="submit" 
 								v-attr="disabled: submitted"
 								v-on="click: submit"
 								v-transition="fade"
+								v-class="submitted: submitted"
 							>@{{ submitted ? greeting : 'OSA' }}</button>
-							<img src="/img/emoji/ok.png" v-show="submitted" class="submit-emoji" v-transition="fade">
 						</div>
 					</div>
 				</form>

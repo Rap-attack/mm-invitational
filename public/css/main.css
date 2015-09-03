@@ -74,7 +74,7 @@
 
 .switch-off {
   position: absolute;
-  left: -27px;
+  left: -28px;
   top: 8px;
   color: white;
   font-weight: bold;
@@ -6940,7 +6940,8 @@ a:hover {
   .osa .top {
     margin-bottom: 1.25rem; }
   .osa label {
-    color: #27323f; }
+    color: #27323f;
+    font-weight: bold; }
   .osa input, .osa textarea {
     transition: all 0.2s ease-out;
     box-shadow: none;
@@ -6960,27 +6961,54 @@ a:hover {
     height: 2rem;
     margin: 0; }
   .osa textarea {
-    resize: none; }
+    resize: none;
+    font-weight: normal; }
   .osa button {
     border-radius: 2px;
     padding: 0.625rem 1.25rem;
-    background-color: #fefefe;
-    outline: none; }
+    outline: none;
+    transition: box-shadow 0.1s ease-out;
+    background-color: white; }
     .osa button:disabled {
-      background-color: #fdfdfd;
+      background-color: rgba(0, 0, 0, 0.05);
       color: #fdfdfd; }
+      .osa button:disabled:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+        box-shadow: none !important; }
     .osa button.add-attendee {
       color: #27323f;
       border: 2px solid #27323f; }
+      .osa button.add-attendee:hover {
+        box-shadow: 0 0 0 2px #27323f inset; }
     .osa button.remove-attendee {
       color: #d96d5c;
       border: 2px solid #d96d5c; }
+      .osa button.remove-attendee:hover {
+        box-shadow: 0 0 0 2px #d96d5c inset; }
     .osa button.submit {
-      background-color: #27323f;
+      transition: margin-left 0s linear;
+      background-color: #d96d5c;
       margin-bottom: 0; }
+      .osa button.submit.submitted {
+        opacity: 1;
+        color: rgba(255, 255, 255, 0.9);
+        background-color: #27323f;
+        margin-left: -1.8rem;
+        padding-left: 3.05rem; }
+        @media only screen and (max-width: 40em) {
+          .osa button.submit.submitted {
+            margin-left: 0;
+            padding-left: 1.25rem; } }
   .osa .submit-emoji {
-    height: 2rem;
-    width: auto; }
+    height: 1.8rem;
+    width: auto;
+    position: relative;
+    left: 1.25rem;
+    bottom: 2px;
+    z-index: 999; }
+    @media only screen and (max-width: 40em) {
+      .osa .submit-emoji {
+        display: none; } }
   .osa .attendee-row {
     margin-bottom: 5px; }
     .osa .attendee-row > .columns {
@@ -7005,7 +7033,7 @@ a:hover {
     height: 4rem;
     width: auto;
     border: 2px solid transparent;
-    transition: all 0.6s ease-out;
+    transition: all 0.3s ease-in;
     cursor: pointer;
     opacity: 0.7; }
     @media only screen and (max-width: 40em) {
@@ -7014,7 +7042,7 @@ a:hover {
     .osa img.ski-level:hover {
       opacity: 1; }
     .osa img.ski-level.chosen {
-      border: 2px solid #d96d5c;
+      border: 2px solid #27323f;
       opacity: 1; }
   .osa .panel.osa-panel {
     margin: 0;
