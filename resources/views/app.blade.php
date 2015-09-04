@@ -311,6 +311,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="osa">OSA</h2>
 					<a name="osa"></a>
+					<h5 class="text-shadow">Lite text ... blah blah.</h5>
 				</div>
 			</div>
 			<div class="panel osa-panel">
@@ -329,8 +330,8 @@
 					<div class="row attendee-row" v-repeat="attendee in attendees" v-transition="attendee">
 						<div class="large-4 columns name-holder">
 							<input type="text" 
+								class="name"
 								placeholder="Namn"
-								text="attendee.name" 
 								v-model="attendee.name"
 								v-attr="disabled: submitted"
 								v-class="error: error && !attendee.name">
@@ -391,12 +392,24 @@
 					</div>
 					<div class="row">
 						<div class="large-12 columns">
+							<label>E-post
+								<input type="email" 
+									placeholder="E-post"
+									v-model="email"
+									v-attr="disabled: submitted"
+									v-class="error: error && !email">
+							</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="large-12 columns">
 							<label>Hälsning
-							<textarea rows="4" 
-								cols="50" 
-								placeholder="Hälsning (valfri)" 
-								v-model="message"
-								v-attr="disabled: submitted"></textarea>
+								<textarea rows="4" 
+									cols="50" 
+									placeholder="Hälsning (valfri)" 
+									v-model="message"
+									v-attr="disabled: submitted"></textarea>
+							</label>
 						</div>
 					</div>
 					<div class="row">

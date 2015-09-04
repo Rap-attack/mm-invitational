@@ -6956,10 +6956,14 @@ a:hover {
     .osa input:disabled, .osa textarea:disabled {
       background: transparent; }
     .osa input.error, .osa textarea.error {
-      border-bottom: 2px solid #d96d5c; }
+      border-bottom: 2px solid #d96d5c;
+      margin-bottom: 1rem; }
+      .osa input.error:focus, .osa textarea.error:focus {
+        box-shadow: 0 -2px 0 #d96d5c inset; }
   .osa input[type="text"] {
-    height: 2rem;
-    margin: 0; }
+    height: 2rem; }
+    .osa input[type="text"].name {
+      margin: 0; }
   .osa textarea {
     resize: none;
     font-weight: normal; }

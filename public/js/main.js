@@ -10746,11 +10746,13 @@ new _vue2['default']({
 	'data': {
 		'attendees': [{
 			'name': '',
-			'competing': false,
+			'competing': true,
 			'skiLevel': null
 		}],
 
 		'message': '',
+
+		'email': '',
 
 		'error': false,
 
@@ -10780,7 +10782,7 @@ new _vue2['default']({
 			if (this.attendees.length < 6) {
 				this.attendees.push({
 					'name': null,
-					'competing': false,
+					'competing': true,
 					'skiLevel': null
 				});
 			}
@@ -10798,9 +10800,17 @@ new _vue2['default']({
 			var token = document.getElementById("_token").content;
 			console.log(token);
 
+			// Check for empty names
 			if (this.attendees.some(function (attendee) {
 				return !attendee.name;
 			})) {
+				this.error = true;
+
+				return false;
+			}
+
+			// Check for empty email
+			if (!this.email) {
 				this.error = true;
 
 				return false;

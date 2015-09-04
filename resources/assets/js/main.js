@@ -9,12 +9,14 @@ new Vue({
 		'attendees': [
 			{
 				'name': '',
-				'competing': false,
+				'competing': true,
 				'skiLevel': null
 			}
 		],
 
 		'message': '',
+
+		'email': '',
 
 		'error': false,
 
@@ -44,7 +46,7 @@ new Vue({
 			if (this.attendees.length < 6) {
 				this.attendees.push({
 					'name': null,
-					'competing': false,
+					'competing': true,
 					'skiLevel': null
 				});
 			}
@@ -62,7 +64,15 @@ new Vue({
 			var token = document.getElementById("_token").content;
 			console.log(token);
 
-			if(this.attendees.some(function(attendee) { return !attendee.name; })) {
+			// Check for empty names
+			if (this.attendees.some(function(attendee) { return !attendee.name; })) {
+				this.error = true;
+
+				return false;
+			}
+
+			// Check for empty email
+			if (!this.email) {
 				this.error = true;
 
 				return false;
