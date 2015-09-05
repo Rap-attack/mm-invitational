@@ -5,6 +5,22 @@
 	max-width: initial;
 }
 
+.white-text {
+	color: white;
+}
+
+.no-left-padding {
+	@media #{$large-up} {
+		padding-left: 0 !important;
+	}
+}
+
+.image {
+	border-radius: 2px;
+	display: block;
+	margin: 0 auto;
+}
+
 .text-box, .text-box-black {
 	padding: $margin-small;
 	color: white;
@@ -13,6 +29,19 @@
 
 	p:last-child {
 		margin-bottom: 0;
+	}
+}
+
+.text-box-row {
+	background-color: $dark-blue;
+	border-radius: 2px;
+
+	div {
+		padding: $margin-small;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
 

@@ -77,13 +77,18 @@
 						</li>
 
 						<li class="event">
+							<span class="tid">10 - 12</span>
+							<span class="title">Inåkning</span>
+						</li>
+
+						<li class="event">
 							<span class="tid">12 - 16</span>
 							<span class="title">MM Invitational</span>
 						</li>
 
 						<li class="event">
 							<span class="tid">17 - 20</span>
-							<span class="title">Aprés Ski Lodge</span>
+							<span class="title">Aprés & BBQ</span>
 						</li>
 					</ul>
 				</div>
@@ -99,12 +104,17 @@
 						</li>
 
 						<li class="event">
-							<span class="tid">15 - 18</span>
+							<span class="tid">09 - 15</span>
+							<span class="title">Vårshredd*</span>
+						</li>
+
+						<li class="event">
+							<span class="tid">16</span>
 							<span class="title">Vigsel</span>
 						</li>
 
 						<li class="event">
-							<span class="tid">20 - </span>
+							<span class="tid">18</span>
 							<span class="title">Middag &amp; Fest</span>
 						</li>
 					</ul>
@@ -118,9 +128,20 @@
 							<span class="tid">10 - 12</span>
 							<span class="title">Brunch</span>
 						</li>
+
+						<li class="event">
+							<span class="tid">12</span>
+							<span class="title">Checkout</span>
+						</li>
 					</ul>
 				</div>
 
+			</div>
+
+			<div class="row">
+				<div class="large-12 column">
+					<small class="white-text">* Alt valfri fysisk aktivitet</small>
+				</div>
 			</div>
 		</div>
 
@@ -132,35 +153,39 @@
 
 			<div class="row">
 				<div class="large-12 column">
-					<h2 class="red-border" data-magellan-destination="mm-invitational">MM Invitational</h2>
+					<h2 class="red-border" data-magellan-destination="mm-invitational"><img src="/img/mm-small-logo.svg" class="inline-logo">Invitational</h2>
 					<a name="mm-invitational"></a>
-					<h5 class="text-shadow">Fredagen den 22:a april går parallellslalomtävlingen <i>MM Invitational</i> av stapeln.</h5>
+					<h5 class="text-shadow">Fredagen den 22:a april går parallellslalomtävlingen MM Invitational av stapeln.</h5>
 				</div>
 			</div>
 
-			<div class="row">
-				<div class="large-12 column">
-					<div class="text-box">
-						<table>
-							<tr>
-								<td>Plats</td>
-								<td>Titlis, Engelberg</td>
-							</tr>
-							<tr>
-								<td>Gren</td>
-								<td>Parallellslalom i lag</td>
-							</tr>
-							<tr>
-								<td>Utrustning</td>
-								<td>Allt är tillåtet</td>
-							</tr>
-							<tr>
-								<td>Sidning</td>
-								<td>Lagen är viktade efter aktuell rankning*</td>
-							</tr>
-						</table>
+			<div class="row text-box-row" data-equalizer data-equalizer-mq="large-up">
+				<div class="large-8 column" data-equalizer-watch>
+					<table>
+						<tr>
+							<td>Plats</td>
+							<td>Titlis, Engelberg</td>
+						</tr>
+						<tr>
+							<td>Gren</td>
+							<td>Parallellslalom i lag</td>
+						</tr>
+						<tr>
+							<td>Utrustning</td>
+							<td><strong>Allt</strong> är tillåtet</td>
+						</tr>
+						<tr>
+							<td>Seedning</td>
+							<td>Lagen är seedade efter aktuell ranking*</td>
+						</tr>
+					</table>
 
-						<small>* Rankingslistor kommer att publiceras kvällen före tävling. Rankning baseras på tidigare meriter och genomsnittligt antal skiddagar per säsong.</small>
+					<small class="white-text">* Rankingslistor publiceras kvällen före tävling.</small>
+
+				</div>
+				<div class="large-4 column no-left-padding" data-equalizer-watch>
+					<div class="logo-holder">
+						<img src="/img/mm-symbol.svg" class="centered-logo">
 					</div>
 				</div>
 			</div>
@@ -187,7 +212,12 @@
 
 						<p>Skidysystemet håller öppet och det är inte ovanligt med puder även sent i april så tänk till en extra gång innan du lämnar de breda laggen hemma.</p>
 
-						<p>Bra skiduthyrning finns i byn. Ett dagskort kostar CHF 62.</p>
+						<p>Bra skiduthyrning finns i byn.</p>
+
+						<p>Ett dagskort kostar CHF 62.</p>
+
+						<img src="/img/april2014.jpg" class="image" alt="Engelberg, tagen 29 april 2014.">
+						<small>Engelberg, tagen 29 april 2014</small>
 					</div>
 				</div>
 				<div class="large-6 column">
@@ -273,9 +303,9 @@
 					<div class="text-box">
 						<h4>Klädsel</h4>
 						<ul>
-							<li>Fredag - Skidoutfit</li>
-							<li>Lördag - Mörk kostym</li>
-							<li>Söndag - Bekvämt</li>
+							<li>Fredag Skidoutfit</li>
+							<li>Lördag Mörk kostym</li>
+							<li>Söndag Bekvämt</li>
 						</ul>
 
 						<h4>Tal</h4>
@@ -285,19 +315,22 @@
 				<div class="large-4 column">
 					<div class="text-box">
 						<h4>Barn</h4>
-						<p>Ta med era fina kids till Engelberg om ni vill, middagen och festen på lördagen är för de vuxna men Ski Lodge hjälper till med barnpassning. Flagga lodgen vid intresse.</p>
+						<p>Ta gärna med era fina kids till Engelberg! Middag och fest på lördagen hålls för de vuxna men Ski Lodge hjälper oss med barnpassning. Flagga vid intresse.</p>
 
 						<h4>Presenter</h4>
-						<p>Den finaste presenten vi kan få är att ni vill ta er till Engelberg och fira med oss!</p>
+						<p>Den bästa present vi kan önska är att ni vill komma till Engelberg och fira med oss!</p>
 					</div>
 				</div>
 				<div class="large-4 column">
 					<div class="text-box">
 						<h4>OSA</h4>
-						<p>Senast den 28:e februari via formuläret nedan.</p>
+						<p>Senast den 1:a januari via formuläret nedan.</p>
 
 						<h4>Allergier</h4>
-						<p>Meddela era allergier direkt till <a href="mailto:info@skilodgeengelberg.com">Ski Lodge</a> i god tid.</p>
+						<p>Meddela eventuella allergier direkt till <a href="mailto:info@skilodgeengelberg.com">Ski Lodge</a> i god tid.</p>
+						
+						<h4>Frågor</h4>
+						<p>Vid eventuella frågor, tveka inte att kontakta oss på <a href="mailto:mminvitational@gmail.com">mminvitational@gmail.com</a></p>
 					</div>
 				</div>
 			</div>
@@ -311,7 +344,6 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="osa">OSA</h2>
 					<a name="osa"></a>
-					<h5 class="text-shadow">Lite text ... blah blah.</h5>
 				</div>
 			</div>
 			<div class="panel osa-panel">
@@ -487,10 +519,11 @@
 		});
 
 		$('.boende').parallax({
-			imageSrc: './img/boende.jpg',
+			imageSrc: './img/lodgen.jpg',
 			naturalWidth: 1500,
-			naturalHeight: 1055,
-			position: 'center bottom'
+			naturalHeight: 1167,
+			position: 'left center',
+			speed: 0.3
 		});
 
 		$('.fyi').parallax({

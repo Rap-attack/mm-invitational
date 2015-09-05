@@ -3,12 +3,12 @@
 @import '../bower/foundation/scss/foundation/functions';
 
 @import './variables';
-@import './utilities';
 @import './settings';
 
 @import '../bower/foundation/scss/normalize';
 @import '../bower/foundation/scss/foundation';
 
+@import './utilities';
 @import './global';
 @import './transitions';
 @import './components/navigation';
