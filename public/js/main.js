@@ -10772,6 +10772,16 @@ new _vue2['default']({
 			}
 
 			return 'Tack ' + this.attendees[0].name.split(' ')[0] + ', vad kul att du kommer!';
+		},
+
+		'validEmail': function validEmail() {
+			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+
+			if (!re.test(this.email)) {
+				return false;
+			}
+
+			return true;
 		}
 	},
 
@@ -10797,32 +10807,34 @@ new _vue2['default']({
 		'submit': function submit(e) {
 			e.preventDefault();
 
-			var token = document.getElementById("_token").content;
-			console.log(token);
-
 			// Check for empty names
 			if (this.attendees.some(function (attendee) {
 				return !attendee.name;
 			})) {
 				this.error = true;
-
-				return false;
 			}
 
-			// Check for empty email
-			if (!this.email) {
+			// Check for empty or invalid email
+			if (!this.email || !this.validEmail) {
 				this.error = true;
-
-				return false;
 			}
+
+			if (this.error) return false;
+
+			this.error = false;
+
+			var token = document.getElementById("_token").content;
 
 			this.$http.post('/api/osa/', {
 				'_token': token,
 				'attendees': this.attendees,
+				'email': this.email,
 				'message': this.message
 			}).success(function (res) {
 				this.submitted = true;
 			}).error(function (res) {
+				this.error = true;
+
 				console.log(res);
 			});
 		}

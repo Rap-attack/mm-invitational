@@ -46,6 +46,8 @@
 			<div class="wow fadeInUp">
 				<h1 class="text-center">VI GIFTER OSS!</h1>
 
+				<h2 class="text-center">Välkommen till en sjudundrande fest - och årtiondets viktigaste tävling!</h2>
+
 				<h2 class="text-center">23 April, 2016</h2>
 
 				<h4 class="text-center">Engelberg, Schweiz</h4>
@@ -62,6 +64,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="program">Program</h2>
 					<a name="program"></a>
+					<h5 class="text-shadow">Välkommen till en sjudundrande fest - och årtiondets viktigaste tävling!</h5>
 				</div>
 			</div>
 
@@ -179,14 +182,16 @@
 							<td>Lagen är seedade efter aktuell ranking*</td>
 						</tr>
 					</table>
-
-					<small class="white-text">* Rankingslistor publiceras kvällen före tävling.</small>
-
 				</div>
-				<div class="large-4 column no-left-padding" data-equalizer-watch>
+				<div class="large-4 column logo-column" data-equalizer-watch>
 					<div class="logo-holder">
 						<img src="/img/mm-symbol.svg" class="centered-logo">
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="large-12 column">
+					<small><strong>* Rankingslistor publiceras kvällen före tävling.</strong></small>
 				</div>
 			</div>
 		
@@ -423,13 +428,13 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-12 columns">
+						<div class="large-4 columns end">
 							<label>E-post
 								<input type="email" 
 									placeholder="E-post"
 									v-model="email"
 									v-attr="disabled: submitted"
-									v-class="error: error && !email">
+									v-class="error: error && !validEmail">
 							</label>
 						</div>
 					</div>
@@ -447,12 +452,14 @@
 					<div class="row">
 						<div class="large-12 columns">
 							<img src="/img/emoji/ok.png" v-show="submitted" class="submit-emoji" v-transition="fade">
-							<button class="submit" 
+							<button type="submit"
+								class="submit" 
 								v-attr="disabled: submitted"
 								v-on="click: submit"
 								v-transition="fade"
 								v-class="submitted: submitted"
 							>@{{ submitted ? greeting : 'OSA' }}</button>
+							<span v-show="error">Något gick fel! Kolla så att allt är ifyllt.</span>
 						</div>
 					</div>
 				</form>

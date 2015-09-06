@@ -6611,10 +6611,6 @@ th.hide-for-touch {
 .white-text {
   color: white; }
 
-@media only screen and (min-width: 64.0625em) {
-  .no-left-padding {
-    padding-left: 0 !important; } }
-
 .image {
   border-radius: 2px;
   display: block;
@@ -6864,12 +6860,12 @@ a:hover {
   padding: 10rem 0; }
   .inbjudan h1, .inbjudan h2, .inbjudan h4 {
     color: white;
-    text-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px; }
+    text-shadow: 0 2px 10px rgba(39, 50, 63, 0.5); }
   .inbjudan h1 {
     font-weight: bold;
-    margin: 50px 0; }
+    margin: 50px 0 100px 0; }
   .inbjudan h2 {
-    margin: 50px 0 0 0; }
+    margin: 0; }
   .inbjudan h4 {
     font-family: Liberator;
     margin: 0; }
@@ -6912,6 +6908,12 @@ a:hover {
   .mm-invitational .inline-logo {
     height: 2.3125rem;
     margin-right: 0.625rem; }
+  @media only screen and (min-width: 64.0625em) {
+    .mm-invitational .logo-column {
+      padding-left: 0 !important; } }
+  @media only screen and (max-width: 40em) {
+    .mm-invitational .logo-column {
+      display: none; } }
   .mm-invitational .logo-holder {
     position: relative;
     height: 100%;
@@ -6926,7 +6928,8 @@ a:hover {
   .mm-invitational table {
     border: none;
     background-color: transparent;
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
     .mm-invitational table tr {
       background-color: #dcd5ca; }
       .mm-invitational table tr:nth-child(even) {
@@ -6998,7 +7001,8 @@ a:hover {
     border: none;
     border-bottom: 2px solid #dcd5ca;
     font-size: 1rem;
-    padding: 0.5rem 0; }
+    padding: 0.5rem 0;
+    font-weight: normal; }
     .osa input:focus, .osa textarea:focus {
       background: transparent;
       border-bottom: 2px solid #dcd5ca;

@@ -9,12 +9,6 @@
 	color: white;
 }
 
-.no-left-padding {
-	@media #{$large-up} {
-		padding-left: 0 !important;
-	}
-}
-
 .image {
 	border-radius: 2px;
 	display: block;

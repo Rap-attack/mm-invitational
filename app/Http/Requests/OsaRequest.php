@@ -23,7 +23,9 @@ class OsaRequest extends Request
      */
     public function rules()
     {
-        $rules = [];
+        $rules = [
+            'email' => 'required|email'
+        ];
 
         foreach($this->request->get('attendees') as $key => $val)
         {
