@@ -223,7 +223,7 @@
 
 						<p>Ett dagskort kostar CHF 62.</p>
 
-						<img src="/img/april20142.jpg" class="image" alt="Engelberg, tagen 29 april 2014.">
+						<img src="/img/april2014.jpg" class="image" alt="Engelberg, tagen 29 april 2014.">
 
 						<span class="text-center">Engelberg, tagen 29 april 2014</small>
 					</div>
@@ -514,7 +514,7 @@
 		});
 
 		$('.mm-invitational').parallax({
-			imageSrc: './img/mminvitational5.jpg',
+			imageSrc: './img/mminvitational.jpg',
 			position: 'center top',
 			naturalWidth: 1400,
 			naturalHeight: 758,

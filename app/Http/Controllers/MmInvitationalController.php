@@ -32,7 +32,7 @@ class MmInvitationalController extends Controller
 
         Mail::send('mail.notification', ['registration' => $registration], function ($m) use ($registration) {
             $m->from('ar.rapaport@gmail.com', 'MM Invitational');
-            $m->to('ar.rapaport@gmail.com')->subject('Anmälan från ' . $registration->attendees->first()->name . '.');
+            $m->to('mminvitational@gmail.com')->subject('Anmälan från ' . $registration->attendees->first()->name . '.');
         });
         
         return response()->json('ok');
