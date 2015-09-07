@@ -530,10 +530,10 @@
 		});
 
 		$('.boende').parallax({
-			imageSrc: './img/lodgen.jpg',
+			imageSrc: './img/lodgen2.jpg',
 			naturalWidth: 1500,
-			naturalHeight: 1167,
-			position: 'left center',
+			naturalHeight: 758,
+			position: 'center top',
 			speed: 0.3
 		});
 

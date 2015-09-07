@@ -6628,7 +6628,7 @@ th.hide-for-touch {
   background-color: #27323f;
   border-radius: 2px; }
   .text-box-row div {
-    padding: 1.25rem; }
+    padding: 0.9375rem; }
     .text-box-row div p:last-child {
       margin-bottom: 0; }
 
@@ -6866,6 +6866,9 @@ a:hover {
     text-shadow: 0 2px 10px rgba(39, 50, 63, 0.8); }
     .inbjudan h1.invite, .inbjudan h2.invite, .inbjudan h4.invite {
       font-family: Apercu; }
+      @media only screen and (max-width: 40em) {
+        .inbjudan h1.invite, .inbjudan h2.invite, .inbjudan h4.invite {
+          letter-spacing: 0; } }
   .inbjudan h1 {
     font-weight: bold;
     margin: 50px 0; }

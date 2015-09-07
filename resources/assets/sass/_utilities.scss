@@ -29,9 +29,10 @@
 .text-box-row {
 	background-color: $dark-blue;
 	border-radius: 2px;
+	
 
 	div {
-		padding: $margin-small;
+		padding: 0.9375rem;
 
 		p:last-child {
 			margin-bottom: 0;
