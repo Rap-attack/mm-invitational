@@ -47,7 +47,11 @@
 
 	h1, h2, h4 {
 		color: white;
-		text-shadow: 0 2px 10px rgba($dark-blue, 0.5);
+		text-shadow: 0 2px 10px rgba($dark-blue, 0.8);
+
+		&.invite {
+			font-family: Apercu;
+		}
 	}
 
 	h1 {

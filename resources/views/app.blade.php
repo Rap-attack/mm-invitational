@@ -46,7 +46,7 @@
 			<div class="wow fadeInUp">
 				<h1 class="text-center">VI GIFTER OSS!</h1>
 
-				<h2 class="text-center">Välkommen till en sjudundrande fest - och årtiondets viktigaste tävling!</h2>
+				<h4 class="invite text-center">Välkommen till en sjudundrande fest<br>och årtiondets viktigaste tävling!</h4>
 
 				<h2 class="text-center">23 April, 2016</h2>
 
@@ -64,7 +64,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="program">Program</h2>
 					<a name="program"></a>
-					<h5 class="text-shadow">Välkommen till en sjudundrande fest - och årtiondets viktigaste tävling!</h5>
+					<h5 class="text-shadow">Välkomna till Engelberg för att fira med oss. Nedan ser ni några hålltider för helgen - mer exakta tider annonseras närmare inpå. Liften öppnar ju 8.30 så för er morgonpigga och skidsugna kommer familjen Hargin med Janette och Erik i spetsen stå och trampa vid liften då - ta gärna rygg på dem.</h5>
 				</div>
 			</div>
 
@@ -158,7 +158,8 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="mm-invitational"><img src="/img/mm-small-logo.svg" class="inline-logo">Invitational</h2>
 					<a name="mm-invitational"></a>
-					<h5 class="text-shadow">Fredagen den 22:a april går parallellslalomtävlingen MM Invitational av stapeln.</h5>
+					<h5 class="text-shadow">Fredagen den 22:a april går parallellslalomtävlingen MM Invitational av stapeln. MMI är en lagtävling och det kommer krävas ett tajt teamwork för att gå vinnande ur denna prestigefulla strid. Ytterligare några bonusgrenar av varierad karaktär kommer att avgöras under dagen.</h5>
+
 				</div>
 			</div>
 
@@ -222,7 +223,7 @@
 						<p>Ett dagskort kostar CHF 62.</p>
 
 						<img src="/img/april20142.jpg" class="image" alt="Engelberg, tagen 29 april 2014.">
-						
+
 						<span class="text-center">Engelberg, tagen 29 april 2014</small>
 					</div>
 				</div>

@@ -6863,7 +6863,9 @@ a:hover {
   padding: 10rem 0; }
   .inbjudan h1, .inbjudan h2, .inbjudan h4 {
     color: white;
-    text-shadow: 0 2px 10px rgba(39, 50, 63, 0.5); }
+    text-shadow: 0 2px 10px rgba(39, 50, 63, 0.8); }
+    .inbjudan h1.invite, .inbjudan h2.invite, .inbjudan h4.invite {
+      font-family: Apercu; }
   .inbjudan h1 {
     font-weight: bold;
     margin: 50px 0; }
