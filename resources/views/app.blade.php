@@ -64,7 +64,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="program">Program</h2>
 					<a name="program"></a>
-					<h5 class="text-shadow">Nedan ser ni några hålltider för helgen - mer exakta tider annonseras närmare inpå. Liften öppnar ju 8.30 så för er morgonpigga och skidsugna kommer familjen Hargin med Janette och Erik i spetsen stå och trampa vid liften då - ta gärna rygg på dem.</h5>
+					<h5 class="text-shadow">Nedan ser ni några hålltider för helgen.</h5>
 				</div>
 			</div>
 
@@ -76,7 +76,7 @@
 
 						<li class="event">
 							<span class="tid">07 - 10</span>
-							<span class="title">Frukost</span>
+							<span class="title">Frukost*</span>
 						</li>
 
 						<li class="event">
@@ -108,7 +108,7 @@
 
 						<li class="event">
 							<span class="tid">09 - 15</span>
-							<span class="title">Vårshredd*</span>
+							<span class="title">Vårshredd**</span>
 						</li>
 
 						<li class="event">
@@ -143,7 +143,8 @@
 
 			<div class="row">
 				<div class="large-12 column">
-					<small class="white-text">* Alt valfri fysisk aktivitet</small>
+					<small class="white-text">* Liften öppnar ju 8.30 så för er morgonpigga och skidsugna kommer familjen Hargin med Janette och Erik i spetsen stå och trampa vid liften då - ta gärna rygg på dem.</small><br>
+					<small class="white-text">** Alt valfri fysisk aktivitet</small>
 				</div>
 			</div>
 		</div>
