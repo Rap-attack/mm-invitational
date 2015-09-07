@@ -51,6 +51,10 @@
 
 		&.invite {
 			font-family: Apercu;
+
+			@media #{$small-only} {
+				letter-spacing: 0;
+			}
 		}
 	}
 
