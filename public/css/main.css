@@ -6956,7 +6956,8 @@ a:hover {
           color: #d96d5c; }
           @media only screen and (max-width: 40em) {
             .mm-invitational table tr td:nth-child(1) {
-              font-size: 1rem; } }
+              font-size: 1rem;
+              padding: 0.625rem; } }
 
 .engelberg {
   background: transparent; }
