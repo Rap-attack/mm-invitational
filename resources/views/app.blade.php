@@ -46,7 +46,7 @@
 			<div class="wow fadeInUp">
 				<h1 class="text-center">VI GIFTER OSS!</h1>
 
-				<h4 class="invite text-center">Välkommen till en sjudundrande fest<br>och årtiondets viktigaste tävling!</h4>
+				<h4 class="invite text-center">Välkommen att fira med oss<br>och delta i årtiondets viktigaste tävling</h4>
 
 				<h2 class="text-center">23 April, 2016</h2>
 
@@ -64,7 +64,7 @@
 				<div class="large-12 column">
 					<h2 class="red-border" data-magellan-destination="program">Program</h2>
 					<a name="program"></a>
-					<h5 class="text-shadow">Nedan ser ni några hålltider för helgen.</h5>
+					<h5 class="text-shadow">Nedan ser ni några hålltider för helgen - mer exakta tider annonseras närmare inpå.</h5>
 				</div>
 			</div>
 
@@ -103,7 +103,7 @@
 
 						<li class="event">
 							<span class="tid">07 - 10</span>
-							<span class="title">Frukost</span>
+							<span class="title">Frukost*</span>
 						</li>
 
 						<li class="event">
@@ -193,7 +193,7 @@
 			</div>
 			<div class="row">
 				<div class="large-12 column">
-					<small><strong>* Rankingslistor publiceras kvällen före tävling.</strong></small>
+					<small><strong class="white-text">* Rankingslistor publiceras kvällen före tävling.</strong></small>
 				</div>
 			</div>
 		
@@ -514,10 +514,10 @@
 		});
 
 		$('.mm-invitational').parallax({
-			imageSrc: './img/mminvitational.jpg',
+			imageSrc: './img/mminvitational5.jpg',
 			position: 'center top',
-			naturalWidth: 1500,
-			naturalHeight: 1000,
+			naturalWidth: 1400,
+			naturalHeight: 758,
 			speed: 0.05
 		});
 
