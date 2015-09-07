@@ -17,7 +17,7 @@ class MmInvitationalController extends Controller
     public function osa(OsaRequest $request)
     {
 
-        /**
+        
         $registration = Registration::create([
             'email' => $request->email,
             'message' => $request->message
@@ -33,10 +33,10 @@ class MmInvitationalController extends Controller
         }
 
         Mail::send('mail.notification', ['registration' => $registration], function ($m) use ($registration) {
-            $m->from('ar.rapaport@gmail', 'MM Invitational');
+            $m->from('ar.rapaport@gmail.com', 'MM Invitational');
             $m->to('ar.rapaport@gmail.com')->subject('Anmälan från ' . $registration->attendees->first()->name . '.');
         });
-        **/
+        
 
         dd('ok');
     }

@@ -6642,6 +6642,9 @@ th.hide-for-touch {
 .red {
   color: #d96d5c; }
 
+.brown {
+  color: #dcd5ca; }
+
 .text-shadow {
   text-shadow: 0 0 15px rgba(0, 0, 0, 0.4); }
 
@@ -6863,7 +6866,7 @@ a:hover {
     text-shadow: 0 2px 10px rgba(39, 50, 63, 0.5); }
   .inbjudan h1 {
     font-weight: bold;
-    margin: 50px 0 100px 0; }
+    margin: 50px 0; }
   .inbjudan h2 {
     margin: 0; }
   .inbjudan h4 {

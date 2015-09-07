@@ -467,6 +467,7 @@
 			<div class="row">
 				<div class="large-12 columns text-center">
 					<img src="img/mm-symbol.svg" class="end-logo wow fadeInUp">
+					<p><small class="brown text-center">Stort tack till Johanna, Richard och Arthur för design &amp; utveckling av inbjudan.</small></p>
 				</div>
 			</div>
 		</div>
