@@ -6971,7 +6971,8 @@ a:hover {
       padding-left: 30px; }
       @media only screen and (max-width: 40em) {
         .engelberg ul.activities li {
-          padding-left: 0; } }
+          padding-left: 0;
+          margin-bottom: 1.25rem; } }
       .engelberg ul.activities li:before {
         content: '';
         display: inline-block;

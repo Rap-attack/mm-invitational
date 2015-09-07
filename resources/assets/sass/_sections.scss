@@ -214,6 +214,7 @@
 
 			@media #{$small-only} {
 				padding-left: 0;
+				margin-bottom: $margin-small;
 			}
 
 			&:before {
