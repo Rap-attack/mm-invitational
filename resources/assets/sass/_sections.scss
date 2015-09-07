@@ -85,7 +85,7 @@
 	}
 
 	.datum {
-		color: white;
+		color: $light-brown;
 		font-weight: bold;
 		border-bottom: 2px solid $red;
 		font-size: 1.2rem;
@@ -179,11 +179,17 @@
 			td {
 				color: $dark-blue;
 				padding: $margin-small;
+				font-weight: bold;
 
 				&:nth-child(1) {
 					font-size: 1.2rem;
 					font-family: Liberator;
+					font-weight: normal;
 					color: $red;
+
+					@media #{$small-only} {
+						font-size: 1rem;
+					}
 				}
 			}
 		}
@@ -197,9 +203,17 @@
 	ul.activities {
 		margin: 0 0 0 8px;
 
+		@media #{$small-only} {
+			margin: 0;
+		}
+
 		li {
 			margin-bottom: $margin-small / 2;
 			padding-left: 30px;
+
+			@media #{$small-only} {
+				padding-left: 0;
+			}
 
 			&:before {
 			   content: '';
@@ -210,6 +224,11 @@
 			   background-size: contain;
 			   background-position: 0px center;
 			   margin: 0 10px -20px -40px;
+
+			   @media #{$small-only} {
+					margin: 10px auto 10px auto;
+					display: block;
+				}
 			}
 		}
 

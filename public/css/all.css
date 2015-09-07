@@ -6885,7 +6885,7 @@ a:hover {
       border-bottom-right-radius: 2px;
       border-bottom-left-radius: 2px; }
   .program .datum {
-    color: white;
+    color: #dcd5ca;
     font-weight: bold;
     border-bottom: 2px solid #d96d5c;
     font-size: 1.2rem;
@@ -6947,19 +6947,30 @@ a:hover {
         border-top-right-radius: 2px; }
       .mm-invitational table tr td {
         color: #27323f;
-        padding: 1.25rem; }
+        padding: 1.25rem;
+        font-weight: bold; }
         .mm-invitational table tr td:nth-child(1) {
           font-size: 1.2rem;
           font-family: Liberator;
+          font-weight: normal;
           color: #d96d5c; }
+          @media only screen and (max-width: 40em) {
+            .mm-invitational table tr td:nth-child(1) {
+              font-size: 1rem; } }
 
 .engelberg {
   background: transparent; }
   .engelberg ul.activities {
     margin: 0 0 0 8px; }
+    @media only screen and (max-width: 40em) {
+      .engelberg ul.activities {
+        margin: 0; } }
     .engelberg ul.activities li {
       margin-bottom: 0.625rem;
       padding-left: 30px; }
+      @media only screen and (max-width: 40em) {
+        .engelberg ul.activities li {
+          padding-left: 0; } }
       .engelberg ul.activities li:before {
         content: '';
         display: inline-block;
@@ -6969,6 +6980,10 @@ a:hover {
         background-size: contain;
         background-position: 0px center;
         margin: 0 10px -20px -40px; }
+        @media only screen and (max-width: 40em) {
+          .engelberg ul.activities li:before {
+            margin: 10px auto 10px auto;
+            display: block; } }
     .engelberg ul.activities li:nth-child(1):before {
       background-image: url("../img/emoji/strong.png"); }
     .engelberg ul.activities li:nth-child(2):before {
