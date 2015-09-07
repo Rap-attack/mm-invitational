@@ -225,7 +225,7 @@
 
 						<img src="/img/april2014.jpg" class="image" alt="Engelberg, tagen 29 april 2014.">
 
-						<span class="text-center">Engelberg, tagen 29 april 2014</small>
+						<small class="text-center">Engelberg, tagen 29 april 2014</small>
 					</div>
 				</div>
 				<div class="large-6 column">
