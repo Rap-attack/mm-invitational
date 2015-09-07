@@ -10747,7 +10747,7 @@ new _vue2['default']({
 		'attendees': [{
 			'name': '',
 			'competing': true,
-			'skiLevel': null
+			'skiLevel': 0
 		}],
 
 		'message': '',
@@ -10793,7 +10793,7 @@ new _vue2['default']({
 				this.attendees.push({
 					'name': null,
 					'competing': true,
-					'skiLevel': null
+					'skiLevel': 0
 				});
 			}
 		},

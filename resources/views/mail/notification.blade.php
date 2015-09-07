@@ -3,7 +3,7 @@
 <b>Email:</b><br>
 {{ $registration->email }}
 
-<br>
+<br><br>
 
 <b>Meddelande:</b><br>
 {{ $registration->message }}
@@ -15,6 +15,8 @@
 @foreach ($registration->attendees as $attendee)
 	<b>{{ $attendee->name }}</b><br>
 	<b>Ställer upp i MMI:</b> {{ $attendee->competing }}<br>
-	<b>Nivå:</b> {{ $attendee->ski_level }}
+	@if ($attendee->competing == 'Ja')
+		<b>Nivå:</b> {{ $attendee->ski_level }}
+	@endif
 	<hr>
 @endforeach

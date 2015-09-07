@@ -10,7 +10,7 @@ new Vue({
 			{
 				'name': '',
 				'competing': true,
-				'skiLevel': null
+				'skiLevel': 0
 			}
 		],
 
@@ -57,7 +57,7 @@ new Vue({
 				this.attendees.push({
 					'name': null,
 					'competing': true,
-					'skiLevel': null
+					'skiLevel': 0
 				});
 			}
 		},
