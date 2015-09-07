@@ -6897,6 +6897,9 @@ a:hover {
     text-transform: uppercase;
     padding-bottom: 0.625rem;
     line-height: 4rem; }
+    @media only screen and (max-width: 40em) {
+      .program .datum {
+        padding-left: 0; } }
   .program .event {
     background-color: #dcd5ca; }
     .program .event:nth-child(odd) {
