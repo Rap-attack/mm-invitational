@@ -6,7 +6,7 @@
 <br><br>
 
 <b>Meddelande:</b><br>
-{{ $registration->message }}
+{!! nl2br(e($registration->message)) !!}
 
 <br>
 

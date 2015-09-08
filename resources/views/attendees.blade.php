@@ -19,14 +19,16 @@
 			<h1>Anmälningar</h1>
 			<table width="100%">
 				<tr style="font-weight: bold; text-decoration: underline;">
+					<th>ID</th>
 					<th>Email</th>
 					<th>Meddelande</th>
 				</tr>
 				
 				@foreach($registrations as $registration)
 					<tr>
+						<td>{{ $registration->id }}</td>
 						<td>{{ $registration->email }}</td>
-						<td>{{ $registration->message }}</td>
+						<td>{!! nl2br(e($registration->message)) !!}</td>
 					</tr>
 				@endforeach
 
@@ -36,6 +38,7 @@
 			<h1>Gäster</h1>
 			<table width="100%">
 				<tr style="font-weight: bold; text-decoration: underline;">
+					<th>Anmälnings-id</th>
 					<th>Namn</th>
 					<th>Deltar i MMI</th>
 					<th>Skidklass</th>
@@ -44,6 +47,7 @@
 				@foreach ($registrations as $registration)
 					@foreach ($registration->attendees as $attendee)
 						<tr>
+							<td>{{ $attendee->registration_id }}</td>
 							<td>{{ $attendee->name }}</td>
 							<td>{{ $attendee->competing }}</td>
 							<td>{{ $attendee->competing ? $attendee->ski_level : '' }}</td>
