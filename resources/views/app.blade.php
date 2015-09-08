@@ -99,7 +99,7 @@
 				<div class="large-4 columns">
 					<ul class="program-list">
 
-						<li class="datum">Lördag 22/4</li>
+						<li class="datum">Lördag 23/4</li>
 
 						<li class="event">
 							<span class="tid">07 - 10</span>
