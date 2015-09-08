@@ -70,6 +70,7 @@ new Vue({
 
 		'submit': function(e) {
 			e.preventDefault();
+			this.error = true;
 
 			// Check for empty names
 			if (this.attendees.some(function(attendee) { return !attendee.name; })) {

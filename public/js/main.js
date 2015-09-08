@@ -10806,6 +10806,7 @@ new _vue2['default']({
 
 		'submit': function submit(e) {
 			e.preventDefault();
+			this.error = true;
 
 			// Check for empty names
 			if (this.attendees.some(function (attendee) {
