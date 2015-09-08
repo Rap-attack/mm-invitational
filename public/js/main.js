@@ -10806,7 +10806,7 @@ new _vue2['default']({
 
 		'submit': function submit(e) {
 			e.preventDefault();
-			this.error = true;
+			this.error = false;
 
 			// Check for empty names
 			if (this.attendees.some(function (attendee) {
@@ -10821,8 +10821,6 @@ new _vue2['default']({
 			}
 
 			if (this.error) return false;
-
-			this.error = false;
 
 			var token = document.getElementById("_token").content;
 

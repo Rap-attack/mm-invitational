@@ -70,7 +70,7 @@ new Vue({
 
 		'submit': function(e) {
 			e.preventDefault();
-			this.error = true;
+			this.error = false;
 
 			// Check for empty names
 			if (this.attendees.some(function(attendee) { return !attendee.name; })) {
@@ -83,8 +83,6 @@ new Vue({
 			}
 
 			if (this.error) return false;
-
-			this.error = false;
 
 			var token = document.getElementById("_token").content;
 
