@@ -107,7 +107,7 @@
 						</li>
 
 						<li class="event">
-							<span class="tid">09 - 15</span>
+							<span class="tid">09 - 14</span>
 							<span class="title">Vårshredd**</span>
 						</li>
 
