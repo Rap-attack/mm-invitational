@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="_token" id="_token" content="{!! csrf_token() !!}">
+	<title>MM Invitational - Välkommen på bröllop!</title>
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
 	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
@@ -44,13 +45,14 @@
 		<div class="small-10 large-8 small-centered column">
 
 			<div class="wow fadeInUp">
-				<h1 class="text-center">VI GIFTER OSS!</h1>
+				<h1>VI GIFTER OSS!</h1>
 
-				<h4 class="invite text-center">Välkommen att fira med oss<br>och delta i årtiondets viktigaste tävling</h4>
+				<h4 class="invite red">Välkommen att fira med oss</h4>
+				<h4 class="invite red">och delta i årtiondets viktigaste tävling!</h4>
 
-				<h2 class="text-center">23 April, 2016</h2>
+				<h2 class="red">23 April, 2016</h2>
 
-				<h4 class="text-center">Engelberg, Schweiz</h4>
+				<h4 class="invite red">Engelberg, Schweiz</h4>
 			</div>		
 			
 		</div>

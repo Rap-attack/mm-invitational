@@ -44,6 +44,7 @@
 	background-position: center top;
 	background: transparent;
 	padding: 2 * $margin-large 0;
+	text-align: center;
 
 	h1, h2, h4 {
 		color: white;
@@ -51,6 +52,14 @@
 
 		&.invite {
 			font-family: Apercu;
+
+			&.red {
+				color: $light-brown;
+				display: inline-block;
+				background-color: $dark-blue;
+				padding: 0 5px;
+				border-radius: 2px;
+			}
 
 			@media #{$small-only} {
 				letter-spacing: 0;
