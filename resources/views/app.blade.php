@@ -47,12 +47,12 @@
 			<div class="wow fadeInUp">
 				<h1>VI GIFTER OSS!</h1>
 
-				<h4 class="invite red">Välkommen att fira med oss</h4>
-				<h4 class="invite red">och delta i årtiondets viktigaste tävling!</h4>
+				<h4 class="invite">Välkommen att fira med oss</h4>
+				<h4 class="invite">och gör upp i decenniets viktigaste tävling!</h4>
 
-				<h2 class="red">23 April, 2016</h2>
+				<h2>23 April, 2016</h2>
 
-				<h4 class="invite red">Engelberg, Schweiz</h4>
+				<h4>Engelberg, Schweiz</h4>
 			</div>		
 			
 		</div>
@@ -532,8 +532,8 @@
 		});
 
 		$('.boende').parallax({
-			imageSrc: './img/lodgen2.jpg',
-			naturalWidth: 1500,
+			imageSrc: './img/lodgen.jpg',
+			naturalWidth: 1400,
 			naturalHeight: 758,
 			position: 'center top',
 			speed: 0.3

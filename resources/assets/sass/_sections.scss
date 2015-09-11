@@ -48,18 +48,12 @@
 
 	h1, h2, h4 {
 		color: white;
-		text-shadow: 0 2px 10px rgba($dark-blue, 0.8);
+		text-shadow: 0 1px 0 $dark-blue,
+					 0 2px 7px rgba($dark-blue, 0.3);
+		text-transform: uppercase;
 
 		&.invite {
 			font-family: Apercu;
-
-			&.red {
-				color: $light-brown;
-				display: inline-block;
-				background-color: $dark-blue;
-				padding: 0 5px;
-				border-radius: 2px;
-			}
 
 			@media #{$small-only} {
 				letter-spacing: 0;
