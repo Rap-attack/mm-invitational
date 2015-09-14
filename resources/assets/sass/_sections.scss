@@ -43,7 +43,12 @@
 .inbjudan {
 	background-position: center top;
 	background: transparent;
-	padding: 2 * $margin-large 0;
+	padding: $margin-large 0;
+
+	@media #{$large-only} {
+		padding: 2 * $margin-large 0;
+	}
+
 	text-align: center;
 
 	h1, h2, h4 {
@@ -107,7 +112,6 @@
 		@media #{$small-only} {
 			padding-left: 0;
 		}
-
 	}
 
 	.event {
