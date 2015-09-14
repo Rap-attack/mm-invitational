@@ -20,7 +20,7 @@
 			<dd data-magellan-arrival="program"><a href="#program">Program</a></dd>
 			<dd data-magellan-arrival="mm-invitational"><a href="#mm-invitational">MM Invitational</a></dd>
 			<dd data-magellan-arrival="engelberg"><a href="#engelberg">Engelberg</a></dd>
-			<dd data-magellan-arrival="boende"><a href="#boende">Boende &amp; Logi</a></dd>
+			<dd data-magellan-arrival="boende"><a href="#boende">Resa &amp; Logi</a></dd>
 			<dd data-magellan-arrival="fyi"><a href="#fyi">FYI</a></dd>
 			<dd data-magellan-arrival="osa"><a href="#osa">OSA</a></dd>
 		</dl>
@@ -259,7 +259,7 @@
 
 			<div class="row">
 				<div class="large-12 column">
-					<h2 class="red-border" data-magellan-destination="boende">Boende &amp; Logi</h2>
+					<h2 class="red-border" data-magellan-destination="boende">Resa &amp; Logi</h2>
 					<a name="boende"></a>
 				</div>
 			</div>
