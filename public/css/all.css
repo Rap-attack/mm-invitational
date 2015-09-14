@@ -6862,8 +6862,11 @@ a:hover {
 .inbjudan {
   background-position: center top;
   background: transparent;
-  padding: 10rem 0;
+  padding: 5rem 0;
   text-align: center; }
+  @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+    .inbjudan {
+      padding: 10rem 0; } }
   .inbjudan h1, .inbjudan h2, .inbjudan h4 {
     color: white;
     text-shadow: 0 1px 0 #27323f, 0 2px 7px rgba(39, 50, 63, 0.3);
