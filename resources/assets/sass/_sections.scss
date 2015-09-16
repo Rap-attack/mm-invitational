@@ -15,13 +15,18 @@
 // Intro Section
 .intro {
 	background: transparent;
+	min-height: 98vh;
 
 	.logo {
 		max-width: 300px;
 		height: auto;
 		margin-right: auto;
 		margin-left: auto;
-		margin-top: 50px;
+		margin-top: $margin-large;
+
+		@media #{$large-only} {
+			margin-top: 2 * $margin-large;
+		}
 	}
 
 	h1 {

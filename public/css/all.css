@@ -1,34 +1,19 @@
 @font-face {
   font-family: Liberator;
-  src: url(../fonts/Liberator-Light.otf);
+  src: url("../fonts/Liberator-Light.eot");
+  src: url("../fonts/Liberator-Light.otf");
   font-weight: normal; }
 
 @font-face {
   font-family: Liberator;
-  src: url(../fonts/Liberator-Heavy.otf);
+  src: url("../fonts/Liberator-Heavy.eot");
+  src: url("../fonts/Liberator-Heavy.otf");
   font-weight: bold; }
 
 @font-face {
-  font-family: Pier;
-  src: url(../fonts/pier.otf); }
-
-@font-face {
-  font-family: Uni-Sans;
-  src: url(../fonts/Uni-Sans-Heavy.otf); }
-
-@font-face {
-  font-family: Sintony;
-  src: url(../fonts/Sintony-Regular.ttf);
-  font-weight: normal; }
-
-@font-face {
-  font-family: Sintony-Bold;
-  src: url(../fonts/Sintony-Bold.ttf);
-  font-weigth: bold; }
-
-@font-face {
   font-family: Apercu;
-  src: url(../fonts/Apercu-Regular.otf);
+  src: url("../fonts/Apercu-Regular.eot");
+  src: url("../fonts/Apercu-Regular.otf");
   font-weight: normal; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -6843,13 +6828,17 @@ a:hover {
       padding: 1.25rem; } }
 
 .intro {
-  background: transparent; }
+  background: transparent;
+  min-height: 98vh; }
   .intro .logo {
     max-width: 300px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px; }
+    margin-top: 5rem; }
+    @media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+      .intro .logo {
+        margin-top: 10rem; } }
   .intro h1 {
     color: #dcd5ca;
     margin: 40px; }

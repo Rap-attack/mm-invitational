@@ -29,13 +29,15 @@
 	<div class="row intro section">
 		<div class="small-10 large-8 small-centered column">
 
-			<div class="logo wow fadeInUp">
-				<img src="img/mm-symbol.svg">
-			</div>
+			<div class="centered">
+				<div class="logo wow fadeInUp">
+					<img src="img/mm-symbol.svg">
+				</div>
 
-			<h1 class="text-center wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1s">
-				21 - 24 APRIL 2016
-			</h1>
+				<h1 class="text-center wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1s">
+					21 - 24 APRIL 2016
+				</h1>
+			</div>
 
 		</div>
 	</div>
