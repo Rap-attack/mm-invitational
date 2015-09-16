@@ -516,7 +516,7 @@
 			imageSrc: './img/intro.jpg',
 			position: 'center top',
 			naturalWidth: 1400,
-			naturalHeight: 707,
+			naturalHeight: 874,
 			speed: 0.5
 		});
 
@@ -531,7 +531,7 @@
 			imageSrc: './img/mminvitational.jpg',
 			position: 'center top',
 			naturalWidth: 1400,
-			naturalHeight: 758,
+			naturalHeight: 874,
 			speed: 0.05
 		});
 
