@@ -39,7 +39,7 @@
 		margin-right: auto;
 		margin-left: auto;
 
-		@media #{$large-only} {
+		@media #{$large-up} {
 			max-width: 500px;
 		}
 	}
