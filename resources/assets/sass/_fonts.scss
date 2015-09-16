@@ -1,20 +1,20 @@
 @font-face {
     font-family: Liberator;
     src: url('../fonts/Liberator-Light.eot');
-    src: url('../fonts/Liberator-Light.otf');
+    src: url('../fonts/Liberator-Light.otf') format('opentype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: Liberator;
-    src: url('../fonts/Liberator-Heavy.eot');
-    src: url('../fonts/Liberator-Heavy.otf');
     font-weight: bold;
+    src: url('../fonts/Liberator-Heavy.eot');
+    src: url('../fonts/Liberator-Heavy.otf') format('opentype');
 }
 
 @font-face {
     font-family: Apercu;
     src: url('../fonts/Apercu-Regular.eot');
-    src: url('../fonts/Apercu-Regular.otf');
+    src: url('../fonts/Apercu-Regular.otf') format('opentype');
     font-weight: normal;
 }
