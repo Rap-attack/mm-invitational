@@ -515,8 +515,8 @@
 		$('.intro').parallax({ 
 			imageSrc: './img/intro.jpg',
 			position: 'center top',
-			naturalWidth: 1500,
-			naturalHeight: 1000,
+			naturalWidth: 1400,
+			naturalHeight: 707,
 			speed: 0.5
 		});
 
@@ -546,7 +546,7 @@
 		$('.boende').parallax({
 			imageSrc: './img/lodgen.jpg',
 			naturalWidth: 1400,
-			naturalHeight: 758,
+			naturalHeight: 874,
 			position: 'center top',
 			speed: 0.3
 		});
