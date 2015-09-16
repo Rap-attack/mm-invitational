@@ -15,17 +15,30 @@
 // Intro Section
 .intro {
 	background: transparent;
-	min-height: 98vh;
+	padding: 0;
+
+	.parent {
+		display: block;
+		height: 100%;
+		position: relative;
+		min-height: 98vh;
+	}
+
+	.centered {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 
 	.logo {
 		max-width: 300px;
 		height: auto;
 		margin-right: auto;
 		margin-left: auto;
-		margin-top: $margin-large;
 
 		@media #{$large-only} {
-			margin-top: 2 * $margin-large;
+			max-width: 500px;
 		}
 	}
 

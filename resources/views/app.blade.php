@@ -27,7 +27,7 @@
 	</div>
 
 	<div class="row intro section">
-		<div class="small-10 large-8 small-centered column">
+		<div class="parent small-10 large-8 small-centered column">
 
 			<div class="centered">
 				<div class="logo wow fadeInUp">
@@ -266,9 +266,9 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" data-equalizer>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>Boende</h4>
 						<p>
 							Ski Lodge Engelberg har tagit fram specialpaketet <i>MMI</i> för CHF 240 per person inklusive tre nätters boende och frukost*. Bokar gör du <a href="mailto:info@skilodgeengelberg.com">här</a> senast den 28:e februari.
@@ -277,7 +277,7 @@
 					</div>
 				</div>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>Resa</h4>
 						<p>
 							<a href="https://www.swiss.com/se/en">Swiss</a> och <a href="https://www.sas.se">SAS</a> flyger direkt till Zurich flygplats. För övriga resealternativ, kika <a href="http://www.kayak.se/flights/ARN-ZRH/2016-04-21-flexible-1day/2016-04-24-flexible-1day">här</a>.
@@ -286,7 +286,7 @@
 					</div>
 				</div>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>Transport</h4>
 						<p>
 							Tåget från flygplatsen tar två timmar och kostar CHF 41, tidtabell hittar du <a href="https://www.sbb.ch">här</a>. Ski Lodge hjälper oss också att boka transfers, pris är beroende av antal så ange vid bokning av rum så försöker de synka.
@@ -310,9 +310,9 @@
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" data-equalizer>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>Klädsel</h4>
 						<ul>
 							<li>Fredag Skidoutfit</li>
@@ -325,7 +325,7 @@
 					</div>
 				</div>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>Barn</h4>
 						<p>Ta gärna med era fina kids till Engelberg! Middag och fest på lördagen hålls för de vuxna men Ski Lodge hjälper oss med barnpassning. Flagga vid intresse.</p>
 
@@ -334,7 +334,7 @@
 					</div>
 				</div>
 				<div class="large-4 column">
-					<div class="text-box">
+					<div class="text-box" data-equalizer-watch>
 						<h4>OSA</h4>
 						<p>Senast den 1:a januari via formuläret nedan.</p>
 
