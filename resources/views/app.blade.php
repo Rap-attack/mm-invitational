@@ -546,8 +546,8 @@
 		$('.boende').parallax({
 			imageSrc: './img/lodgen.jpg',
 			naturalWidth: 1400,
-			naturalHeight: 874,
-			position: 'center top',
+			naturalHeight: 738,
+			position: 'left top',
 			speed: 0.3
 		});
 
