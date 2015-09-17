@@ -39,14 +39,14 @@
 		margin-right: auto;
 		margin-left: auto;
 
-		@media #{$large-up} {
-			max-width: 440px;
+		@media #{$xlarge-up} {
+			max-width: 500px;
 		}
 	}
 
 	h1 {
 		color: $light-brown;
-		margin-top: 40px;
+		margin-top: $margin-small;
 	}
 
 	ul.intro-nav {
